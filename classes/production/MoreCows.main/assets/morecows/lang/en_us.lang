@@ -1,0 +1,43 @@
+itemGroup.morecows=MoreCows
+
+entity.lava_cow.name=lava cow
+entity.water_cow.name=water cow
+entity.beefroot.name=beefroot
+
+tile.beefroot_beetroot.name=beefroot's beetroot
+
+item.lava_wheat.name=lava wheat
+item.lava_wheat.desc=§oLava cow's favorite food
+
+item.condensed_lava_wheat.name=condensed lava wheat
+item.condensed_lava_wheat.desc=§oTurn the cow into lava cow
+
+item.water_wheat.name=water wheat
+item.water_wheat.desc=§oWater cow's favorite food
+
+item.condensed_water_wheat.name=condensed water wheat
+item.condensed_water_wheat.desc=§oTurn the cow into water cow
+
+item.condensed_mushroom_wheat.name=condensed mushroom wheat
+item.condensed_mushroom_wheat.desc=§oTurn the cow into mooshroom
+
+item.condensed_beetroot_wheat.name=condensed beetroot wheat
+item.condensed_beetroot_wheat.desc=§oTurn the cow into beefroot
+
+item.golden_wheat.name=§egolden_wheat
+item.golden_wheat.desc=§oLet the cow grow up suddenly
+
+advancements.morecows.root.title=A bucket of milk, please!
+advancements.morecows.root.description=Breed a cow or mooshroom
+advancements.morecows.condensed_wheat.title=Will cows really eat?
+advancements.morecows.condensed_wheat.description=Get any condensed wheat
+advancements.morecows.all_condensed_wheat.title=Condensed wheat party
+advancements.morecows.all_condensed_wheat.description=Get all condensed wheat
+advancements.morecows.bred_all_cow.title=Cow"s family!
+advancements.morecows.bred_all_cow.description=Bred all kinds of cow
+advancements.morecows.breed_liquid_cow.title=Liquid to liquid
+advancements.morecows.breed_liquid_cow.description=Breed a liquid cow
+
+
+
+

@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "morecows:lava_wheat"
+        },
+        "title": {
+            "translate": "advancements.morecows.breed_liquid_cow.title"
+        },
+        "description": {
+            "translate": "advancements.morecows.breed_liquid_cow.description"
+        }
+    },
+    "parent": "morecows:main/condensed_wheat",
+    "criteria": {
+        "bred_lava_cow": {
+            "trigger": "bred_animals",
+            "conditions": {
+                "parent": {
+                    "type": "morecows:lava_cow"
+                }
+            }
+        },
+        "bred_water_cow": {
+            "trigger": "bred_animals",
+            "conditions": {
+                "parent": {
+                    "type": "morecows:water_cow"
+                }
+            }
+        }
+    },
+    "requirements": [
+            ["bred_lava_cow", "bred_water_cow"]
+    ]
+}

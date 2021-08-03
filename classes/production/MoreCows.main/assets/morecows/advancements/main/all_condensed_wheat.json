@@ -1,0 +1,57 @@
+{
+    "display": {
+        "icon": {
+            "item": "morecows:condensed_water_wheat"
+        },
+        "title": {
+            "translate": "advancements.morecows.all_condensed_wheat.title"
+        },
+        "description": {
+            "translate": "advancements.morecows.all_condensed_wheat.description"
+        },
+        "frame": "challenge"
+    },
+    "parent": "morecows:main/condensed_wheat",
+    "criteria": {
+        "lava": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "morecows:condensed_lava_wheat"
+                    }
+                ]
+            }
+        },
+        "water": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "morecows:condensed_water_wheat"
+                    }
+                ]
+            }
+        },
+        "beetroot": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "morecows:condensed_beetroot_wheat"
+                    }
+                ]
+            }
+        },
+        "mushroom": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "morecows:condensed_mushroom_wheat"
+                    }
+                ]
+            }
+        }
+    }
+}
