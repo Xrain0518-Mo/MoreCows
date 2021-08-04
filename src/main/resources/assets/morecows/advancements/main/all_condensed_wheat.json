@@ -11,7 +11,7 @@
         },
         "frame": "challenge"
     },
-    "parent": "morecows:main/condensed_wheat",
+    "parent": "morecows:main/evil_wheat",
     "criteria": {
         "lava": {
             "trigger": "inventory_changed",
@@ -49,6 +49,26 @@
                 "items": [
                     {
                         "item": "morecows:condensed_mushroom_wheat"
+                    }
+                ]
+            }
+        },
+        "rotten": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "morecows:condensed_rotten_wheat"
+                    }
+                ]
+            }
+        },
+        "bone": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "morecows:condensed_bone_wheat"
                     }
                 ]
             }

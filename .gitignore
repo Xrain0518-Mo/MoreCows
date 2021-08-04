@@ -25,3 +25,19 @@ runServer/*
 !runServer/eula.txt
 !runServer/server.properties
 
+#自定义
+0新建物品或其他方块.bat
+1_其一，setupDecomp.bat
+打包前记得改版本号.bat
+CREDITS.txt
+forge-1.12.2-14.23.5.2768-changelog.txt
+GenBlockJson.lua
+LICENSE.txt
+LICENSE-Paulscode IBXM Library.txt
+LICENSE-Paulscode SoundSystem CodecIBXM.txt
+README.txt
+uuid.txt
+简要说明（中文）.txt
+classes
+run
+runServer

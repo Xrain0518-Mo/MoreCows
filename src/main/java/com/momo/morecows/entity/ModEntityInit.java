@@ -1,9 +1,6 @@
 package com.momo.morecows.entity;
 
-import com.momo.morecows.entity.creatures.misc.EntityBeefroot;
-import com.momo.morecows.entity.creatures.misc.EntityLavaCow;
-import com.momo.morecows.entity.creatures.misc.EntityWaterCow;
-import com.momo.morecows.entity.creatures.misc.EntityZombieCow;
+import com.momo.morecows.entity.creatures.misc.*;
 import com.momo.morecows.util.Reference;
 import com.momo.morecows.IdlFramework;
 import net.minecraft.entity.Entity;
@@ -21,7 +18,8 @@ public class ModEntityInit {
         registerEntity("lava_cow", EntityLavaCow.class,0x800000, 0xff4500);
         registerEntity("water_cow", EntityWaterCow.class,0x00008b, 0x87CEFA);
         registerEntity("beefroot", EntityBeefroot.class,0x8B2323, 0x808080);
-        registerEntity("zombie_cow", EntityZombieCow.class,0x8B2323, 0x2E8B57);
+        registerEntity("zombie_cow", EntityZombieCow.class,0x363636, 0x2E8B57);
+        registerEntity("skeleton_cow", EntitySkeletonCow.class,0x363636, 0xF5F5F5);
 
         //the bullet
         //registerEntity("bullet", EntityIdlProjectile.class);

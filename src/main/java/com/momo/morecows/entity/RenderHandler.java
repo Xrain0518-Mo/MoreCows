@@ -1,9 +1,6 @@
 package com.momo.morecows.entity;
 
-import com.momo.morecows.entity.creatures.misc.EntityBeefroot;
-import com.momo.morecows.entity.creatures.misc.EntityLavaCow;
-import com.momo.morecows.entity.creatures.misc.EntityWaterCow;
-import com.momo.morecows.entity.creatures.misc.EntityZombieCow;
+import com.momo.morecows.entity.creatures.misc.*;
 import com.momo.morecows.entity.creatures.render.*;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;
@@ -40,6 +37,13 @@ public class RenderHandler {
             @Override
             public Render<? super EntityZombieCow> createRenderFor(RenderManager manager) {
                 return new RenderZombieCow(manager);
+            }
+        });
+
+        RenderingRegistry.registerEntityRenderingHandler(EntitySkeletonCow.class, new IRenderFactory<EntitySkeletonCow>() {
+            @Override
+            public Render<? super EntitySkeletonCow> createRenderFor(RenderManager manager) {
+                return new RenderSkeletonCow(manager);
             }
         });
     }
