@@ -32,6 +32,8 @@ item.condensed_rotten_wheat.desc=§o含有足以飞升的腐化精华
 item.condensed_bone_wheat.name=精华白骨小麦
 item.condensed_bone_wheat.desc=§o含有足以飞升的白骨精华
 
+item.rotten_milk.name=变质的牛奶
+
 item.golden_wheat.name=§e黄金小麦
 item.golden_wheat.desc=§o让牛瞬间成年
 

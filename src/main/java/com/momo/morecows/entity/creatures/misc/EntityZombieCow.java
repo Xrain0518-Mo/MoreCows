@@ -1,5 +1,6 @@
 package com.momo.morecows.entity.creatures.misc;
 
+import com.momo.morecows.item.ModItems;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.ai.*;
 import net.minecraft.entity.passive.EntityAnimal;
@@ -47,11 +48,11 @@ public class EntityZombieCow extends EntityModCow
 
             if (itemstack.isEmpty())
             {
-                player.setHeldItem(hand, new ItemStack(Items.MILK_BUCKET));
+                player.setHeldItem(hand, new ItemStack(ModItems.ROTTEN_MILK));
             }
-            else if (!player.inventory.addItemStackToInventory(new ItemStack(Items.MILK_BUCKET)))
+            else if (!player.inventory.addItemStackToInventory(new ItemStack(ModItems.ROTTEN_MILK)))
             {
-                player.dropItem(new ItemStack(Items.MILK_BUCKET), false);
+                player.dropItem(new ItemStack(ModItems.ROTTEN_MILK), false);
             }
 
             return true;
