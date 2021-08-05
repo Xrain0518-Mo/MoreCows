@@ -32,10 +32,16 @@ item.condensed_rotten_wheat.desc=§o含有足以飞升的腐化精华
 item.condensed_bone_wheat.name=精华白骨小麦
 item.condensed_bone_wheat.desc=§o含有足以飞升的白骨精华
 
-item.rotten_milk.name=变质的牛奶
-
 item.golden_wheat.name=§e黄金小麦
 item.golden_wheat.desc=§o让牛瞬间成年
+
+item.rotten_milk.name=变质的牛奶
+
+item.cheese.name=奶酪
+item.rotten_cheese.name=变质奶酪
+
+item.creamer.name=精致奶精
+item.rotten_creamer.name=变质奶精
 
 advancements.morecows.root.title=要一桶牛奶!
 advancements.morecows.root.description=繁殖一头牛或哞菇

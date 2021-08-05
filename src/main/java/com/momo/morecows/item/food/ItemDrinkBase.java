@@ -2,7 +2,6 @@ package com.momo.morecows.item.food;
 
 import com.momo.morecows.item.ItemBase;
 import com.momo.morecows.util.IHasModel;
-import javafx.scene.effect.Effect;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -18,6 +17,9 @@ import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
 
+import java.util.Collection;
+
+
 public class ItemDrinkBase extends ItemBase implements IHasModel
 {
     public ItemDrinkBase(String name)
@@ -30,7 +32,9 @@ public class ItemDrinkBase extends ItemBase implements IHasModel
     {
         if (!worldIn.isRemote)
         {
-            entityLiving.addPotionEffect(new PotionEffect(MobEffects.HUNGER, 30*20, 1, false, true));
+            addDuration(entityLiving);
+
+            entityLiving.addPotionEffect(new PotionEffect(MobEffects.HUNGER, 60*20, 0, false, true));
         }
 
         if (entityLiving instanceof EntityPlayerMP)
@@ -46,6 +50,16 @@ public class ItemDrinkBase extends ItemBase implements IHasModel
         }
 
         return stack.isEmpty() ? new ItemStack(Items.BUCKET) : stack;
+    }
+
+    public static void addDuration(EntityLivingBase entityLiving)
+    {
+        Collection<PotionEffect> activePotionEffects = entityLiving.getActivePotionEffects();
+
+        for (int i = 0; i < activePotionEffects.size(); i++) {
+            PotionEffect effect = (PotionEffect)activePotionEffects.toArray()[i];
+            entityLiving.addPotionEffect(new PotionEffect(effect.getPotion(), effect.getDuration() + 210*20, effect.getAmplifier(), effect.getIsAmbient(), true));
+        }
     }
 
     public int getMaxItemUseDuration(ItemStack stack)

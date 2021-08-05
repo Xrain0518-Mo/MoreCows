@@ -32,10 +32,16 @@ item.condensed_rotten_wheat.desc=§oTurn the cow into zombie cow
 item.condensed_bone_wheat.name=Condensed bone wheat
 item.condensed_bone_wheat.desc=§oTurn the cow into skeleton cow
 
-item.rotten_milk.name=Rotten milk
-
 item.golden_wheat.name=§eGolden_wheat
 item.golden_wheat.desc=§oLet the cow grow up suddenly
+
+item.rotten_milk.name=Rotten milk
+
+item.cheese.name=Cheese
+item.rotten_cheese.name=Rotten cheese
+
+item.creamer.name=Creamer
+item.rotten_creamer.name=Rotten creamer
 
 advancements.morecows.root.title=A bucket of milk, please!
 advancements.morecows.root.description=Breed a cow or mooshroom

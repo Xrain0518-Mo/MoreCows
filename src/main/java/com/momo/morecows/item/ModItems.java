@@ -1,7 +1,9 @@
 package com.momo.morecows.item;
 
 import com.momo.morecows.init.ModCreativeTab;
+import com.momo.morecows.item.food.ItemCheese;
 import com.momo.morecows.item.food.ItemDrinkBase;
+import com.momo.morecows.item.food.ItemRottenCheese;
 import net.minecraft.item.Item;
 
 import java.util.ArrayList;
@@ -21,6 +23,8 @@ public class ModItems {
 	public static final Item CONDENSED_BONE_WHEAT = new ItemBase("condensed_bone_wheat").setCreativeTab(ModCreativeTab.MORECOWS_TAB);
 	public static final Item GOLDEN_WHEAT = new ItemBase("golden_wheat").setCreativeTab(ModCreativeTab.MORECOWS_TAB);
 	public static final Item ROTTEN_MILK = new ItemDrinkBase("rotten_milk").setCreativeTab(ModCreativeTab.MORECOWS_TAB);
+	public static final Item CHEESE = new ItemCheese("cheese", 4,4.0F, false);
+	public static final Item ROTTEN_CHEESE = new ItemRottenCheese("rotten_cheese", 3, 1.0F, false);
 
 	/*
 	WOOD(0, 59, 2.0F, 0.0F, 15),
