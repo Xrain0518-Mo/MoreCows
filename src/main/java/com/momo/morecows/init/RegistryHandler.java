@@ -6,11 +6,15 @@ import com.momo.morecows.blocks.ModBlocks;
 import com.momo.morecows.entity.ModEntityInit;
 import com.momo.morecows.item.ModItems;
 
+import com.momo.morecows.item.potions.ModPotionType;
+import com.momo.morecows.potion.ModPotion;
 import com.momo.morecows.util.IHasModel;
 import com.momo.morecows.util.ModSoundHandler;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionType;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
@@ -43,6 +47,18 @@ public class RegistryHandler {
 //		for (Enchantment enchantment : Enchantment.REGISTRY) {
 //			IdlFramework.Log("registered enchantments: %s", enchantment.getName());
 //		}
+	}
+
+	@SubscribeEvent
+	public static void onPotionRegistry(RegistryEvent.Register<Potion> event)
+	{
+		event.getRegistry().registerAll(ModPotion.POTIONS.toArray(new Potion[0]));
+	}
+
+	@SubscribeEvent
+	public static void onPotionTypeRegistry(RegistryEvent.Register<PotionType> event)
+	{
+		event.getRegistry().registerAll(ModPotionType.POTION_TYPES.toArray(new PotionType[0]));
 	}
 
 	@SideOnly(Side.CLIENT)

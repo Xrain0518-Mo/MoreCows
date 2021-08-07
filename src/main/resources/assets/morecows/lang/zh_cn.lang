@@ -43,6 +43,16 @@ item.rotten_cheese.name=变质奶酪
 item.creamer.name=精致奶精
 item.rotten_creamer.name=变质奶精
 
+effect.delayed=延时
+potion.effect.delayed=延时药水
+splash_potion.effect.delayed=喷溅型延时药水
+lingering_potion.effect.delayed=滞留型延时药水
+
+effect.purify=净化
+potion.effect.purify=净化药水
+splash_potion.effect.purify=喷溅型净化药水
+lingering_potion.effect.purify=滞留型净化药水
+
 advancements.morecows.root.title=要一桶牛奶!
 advancements.morecows.root.description=繁殖一头牛或哞菇
 advancements.morecows.condensed_wheat.title=牛真的会吃吗?

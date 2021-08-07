@@ -43,6 +43,16 @@ item.rotten_cheese.name=Rotten cheese
 item.creamer.name=Creamer
 item.rotten_creamer.name=Rotten creamer
 
+effect.delayed=Delayed
+potion.effect.delayed=Delayed Potion
+splash_potion.effect.delayed=Splash Potion of Delayed
+lingering_potion.effect.delayed=Lingering Potion of Delayed
+
+effect.purify=Purify
+potion.effect.purify=Purify Potion
+splash_potion.effect.purify=Splash Potion of Purify
+lingering_potion.effect.purify=Lingering Potion of Purify
+
 advancements.morecows.root.title=A bucket of milk, please!
 advancements.morecows.root.description=Breed a cow or mooshroom
 advancements.morecows.condensed_wheat.title=Will cows really eat?

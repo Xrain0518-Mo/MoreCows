@@ -22,9 +22,13 @@ public class ModItems {
 	public static final Item CONDENSED_ROTTEN_WHEAT = new ItemBase("condensed_rotten_wheat").setCreativeTab(ModCreativeTab.MORECOWS_TAB);
 	public static final Item CONDENSED_BONE_WHEAT = new ItemBase("condensed_bone_wheat").setCreativeTab(ModCreativeTab.MORECOWS_TAB);
 	public static final Item GOLDEN_WHEAT = new ItemBase("golden_wheat").setCreativeTab(ModCreativeTab.MORECOWS_TAB);
+
 	public static final Item ROTTEN_MILK = new ItemDrinkBase("rotten_milk").setCreativeTab(ModCreativeTab.MORECOWS_TAB);
 	public static final Item CHEESE = new ItemCheese("cheese", 4,4.0F, false);
 	public static final Item ROTTEN_CHEESE = new ItemRottenCheese("rotten_cheese", 3, 1.0F, false);
+	public static final Item CREAMER = new ItemBase("creamer").setCreativeTab(ModCreativeTab.MORECOWS_TAB);
+	public static final Item ROTTEN_CREAMER = new ItemBase("rotten_creamer").setCreativeTab(ModCreativeTab.MORECOWS_TAB);
+
 
 	/*
 	WOOD(0, 59, 2.0F, 0.0F, 15),

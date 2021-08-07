@@ -21,7 +21,7 @@ public class ItemWaterGoblet extends ItemGobletBase {
     public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected) {
         super.onUpdate(stack, worldIn, entityIn, itemSlot, isSelected);
 
-        //todo : produce water, gives breathing and night vision buff in water; acquire those abilities one by one
+        //todo : produce water, gives breathing and night vision buffEffect in water; acquire those abilities one by one
 
         if (isSelected && !worldIn.isRemote)
         {
