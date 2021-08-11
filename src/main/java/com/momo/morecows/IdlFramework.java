@@ -1,6 +1,5 @@
 package com.momo.morecows;
 
-import com.momo.morecows.gui.ModGuiElementLoader;
 import com.momo.morecows.init.*;
 import com.momo.morecows.item.potions.ModPotionType;
 import com.momo.morecows.keys.KeyboardManager;
@@ -9,7 +8,6 @@ import com.momo.morecows.network.NetworkHandler;
 import com.momo.morecows.proxy.ProxyBase;
 import com.momo.morecows.util.CommonDef;
 import com.momo.morecows.util.Reference;
-import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -63,7 +61,6 @@ public class IdlFramework {
         ModRecipes.Init();
         RegisterTileEntity();
         RegistryHandler.initRegistries(event);
-        new ModGuiElementLoader();
         if (!proxy.isServer())
         {
             KeyboardManager.init();

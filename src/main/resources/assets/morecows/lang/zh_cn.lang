@@ -7,6 +7,7 @@ entity.zombie_cow.name=僵尸牛
 entity.skeleton_cow.name=骷髅牛
 
 tile.beefroot_beetroot.name=甜菜犇的甜菜
+tile.milk_workshop.name=奶工坊
 
 item.lava_wheat.name=熔岩小麦
 item.lava_wheat.desc=§o熔岩牛最爱的食物

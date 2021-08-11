@@ -1,0 +1,31 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:cube",
+    "display": {
+      "firstperson_righthand": {
+        "rotation": [0, 135, 0],
+        "translation": [0, 0, 0],
+        "scale": [0.40, 0.40, 0.40]
+      }
+    },
+    "textures": {
+      "particle": "morecows:blocks/milk_workshop_front",
+      "down": "morecows:blocks/milk_workshop_bottom",
+      "up": "morecows:blocks/milk_workshop_top",
+      "north": "morecows:blocks/milk_workshop_front",
+      "east": "morecows:blocks/milk_workshop_right",
+      "west": "morecows:blocks/milk_workshop_left",
+      "south": "morecows:blocks/milk_workshop_back"
+    }
+  },
+  "variants": {
+    "facing": {
+      "west": { "y":  270 },
+      "south": { "y":  180},
+      "east": { "y":  90},
+      "north": { }
+    },
+    "inventory": [{ "transform": "forge:default-block"}]
+  }
+}

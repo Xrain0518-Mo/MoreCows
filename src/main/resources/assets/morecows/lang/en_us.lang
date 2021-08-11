@@ -7,6 +7,7 @@ entity.zombie_cow.name=Zombie cow
 entity.skeleton_cow.name=Skeleton cow
 
 tile.beefroot_beetroot.name=Beefroot's beetroot
+tile.milk_workshop.name=Milk workshop
 
 item.lava_wheat.name=Lava wheat
 item.lava_wheat.desc=§oLava cow's favorite food

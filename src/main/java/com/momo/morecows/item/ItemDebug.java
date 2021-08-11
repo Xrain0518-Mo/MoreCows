@@ -1,28 +1,21 @@
 package com.momo.morecows.item;
 
-import com.momo.morecows.gui.ModGuiElementLoader;
+
 import com.momo.morecows.IdlFramework;
-import com.momo.morecows.entity.projectiles.EntityIdlProjectile;
-import com.momo.morecows.entity.projectiles.ProjectileArgs;
 import com.momo.morecows.util.NBTStrDef.IDLNBTUtil;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
-import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumHand;
-import net.minecraft.util.SoundCategory;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
-import static com.momo.morecows.util.IDLSkillNBT.GetGuaEnhance;
 
 public class ItemDebug extends ItemBase{
     int index = 0;
@@ -94,45 +87,4 @@ public class ItemDebug extends ItemBase{
             }
         }
     }
-
-    @Override
-    public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
-
-        playerIn.swingArm(handIn);
-
-        ItemStack stack = playerIn.getHeldItem(handIn);
-
-        if (index == 2 && !worldIn.isRemote) {
-            EntityIdlProjectile bullet = new EntityIdlProjectile(worldIn, new ProjectileArgs(4f), playerIn, 0, 0.05, 0);
-            worldIn.spawnEntity(bullet);
-            IdlFramework.Log("bullet pos = %s", bullet.getPosition());
-            worldIn.playSound(playerIn, playerIn.getPosition(), SoundEvents.ENTITY_PLAYER_LEVELUP, SoundCategory.PLAYERS, 1f, 1f);
-            //return
-        }
-
-        if (!worldIn.isRemote)
-        {
-            //playerIn.getHeldItemOffhand().getItem() == ModItems.DEBUG_ITEM_3;
-            if (index == 3)
-            {
-                BlockPos pos = playerIn.getPosition();
-                playerIn.openGui(IdlFramework.instance, ModGuiElementLoader.GUI_RESEARCH, worldIn, pos.getX(), pos.getY(), pos.getZ());
-            }
-            //else
-
-            //todo: optimize
-            //playerIn.openGui(IdlFramework.instance, ModGuiElementLoader.GUI_DEMO, worldIn, pos.getX(), pos.getY(), pos.getZ());
-
-//            for (int i = 1; i <= 1000; i++)
-//            {
-//                IDLNBTUtil.SetString(stack, "TEST", IDLNBTUtil.GetString(stack, "TEST", "") + "a");
-//            }
-        }
-        //IdlFramework.Log("NBT len = %d", IDLNBTUtil.GetString(stack, "TEST", "").length());
-
-        //IDLSkillNBT.SetGuaEnhanceFree(playerIn.getHeldItem(handIn), 2);
-        return super.onItemRightClick(worldIn, playerIn, handIn);
-    }
-
-
 }
