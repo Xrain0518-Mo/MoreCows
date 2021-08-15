@@ -2,6 +2,7 @@ package com.momo.morecows.item.food;
 
 import com.momo.morecows.item.ItemBase;
 import com.momo.morecows.util.IHasModel;
+import javafx.scene.effect.Effect;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -10,6 +11,7 @@ import net.minecraft.init.Items;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.stats.StatList;
 import net.minecraft.util.ActionResult;
@@ -22,6 +24,8 @@ import java.util.Collection;
 
 public class ItemDrinkBase extends ItemBase implements IHasModel
 {
+    private  static int amplifierIn;
+
     public ItemDrinkBase(String name)
     {
         super(name);
@@ -58,7 +62,15 @@ public class ItemDrinkBase extends ItemBase implements IHasModel
 
         for (int i = 0; i < activePotionEffects.size(); i++) {
             PotionEffect effect = (PotionEffect)activePotionEffects.toArray()[i];
-            entityLiving.addPotionEffect(new PotionEffect(effect.getPotion(), effect.getDuration() + 120*20, effect.getAmplifier(), effect.getIsAmbient(), true));
+            if(effect.getPotion() == MobEffects.HUNGER )
+            {
+                if(effect.getAmplifier() >= 3) amplifierIn = 3;
+                else amplifierIn = effect.getAmplifier() + 1;
+                entityLiving.addPotionEffect(new PotionEffect(effect.getPotion(), effect.getDuration() + 120*20, amplifierIn, effect.getIsAmbient(), true));
+            }
+            else {
+                entityLiving.addPotionEffect(new PotionEffect(effect.getPotion(), effect.getDuration() + 120*20, effect.getAmplifier(), effect.getIsAmbient(), true));
+            }
         }
     }
 

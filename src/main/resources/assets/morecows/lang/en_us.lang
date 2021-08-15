@@ -1,10 +1,15 @@
 itemGroup.morecows=MoreCows
 
+#Creatures
 entity.lava_cow.name=Lava cow
 entity.water_cow.name=Water cow
 entity.beefroot.name=Beefroot
 entity.zombie_cow.name=Zombie cow
 entity.skeleton_cow.name=Skeleton cow
+
+#Throwable
+entity.milk_ball.name=Milk ball
+item.milk_ball.name=Milk ball
 
 tile.beefroot_beetroot.name=Beefroot's beetroot
 tile.milk_workshop.name=Milk workshop

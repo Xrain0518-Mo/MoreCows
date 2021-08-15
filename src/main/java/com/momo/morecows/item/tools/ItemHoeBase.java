@@ -1,7 +1,9 @@
-package com.momo.morecows.item;
+package com.momo.morecows.item.tools;
 
 import com.momo.morecows.init.ModCreativeTab;
 import com.momo.morecows.IdlFramework;
+import com.momo.morecows.item.IGuaEnhance;
+import com.momo.morecows.item.ModItems;
 import com.momo.morecows.util.CommonFunctions;
 import com.momo.morecows.util.IDLSkillNBT;
 import com.momo.morecows.util.IHasModel;

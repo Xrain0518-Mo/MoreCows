@@ -1,7 +1,9 @@
-package com.momo.morecows.item;
+package com.momo.morecows.item.tools;
 
 import com.momo.morecows.init.ModCreativeTab;
 import com.momo.morecows.IdlFramework;
+import com.momo.morecows.item.IGuaEnhance;
+import com.momo.morecows.item.ModItems;
 import com.momo.morecows.util.CommonFunctions;
 import com.momo.morecows.util.IDLSkillNBT;
 import com.momo.morecows.util.IHasModel;
@@ -11,7 +13,7 @@ import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.EnumRarity;
-import net.minecraft.item.ItemAxe;
+import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
@@ -19,7 +21,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
-public class ItemAxeBase extends ItemAxe implements IHasModel {
+public class ItemPickaxeBase extends ItemPickaxe implements IHasModel {
 	private boolean overrideRarity = false;
 	private EnumRarity enumRarity = EnumRarity.COMMON;
 	protected boolean showGuaSocketDesc = false;
@@ -33,9 +35,9 @@ public class ItemAxeBase extends ItemAxe implements IHasModel {
 	//for accessing the private value
 	protected ToolMaterial toolMaterial;
 
-	public ItemAxeBase(String name, ToolMaterial material)
+	public ItemPickaxeBase(String name, ToolMaterial material)
 	{
-		super(material, 8.0F, -2.8F);
+		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(ModCreativeTab.MORECOWS_TAB);
@@ -45,7 +47,7 @@ public class ItemAxeBase extends ItemAxe implements IHasModel {
 		InitItem();
 	}
 
-	public ItemAxeBase setRarity(EnumRarity enumRarity)
+	public ItemPickaxeBase setRarity(EnumRarity enumRarity)
 	{
 		overrideRarity = true;
 		this.enumRarity = enumRarity;

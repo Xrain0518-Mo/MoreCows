@@ -16,6 +16,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import org.apache.logging.log4j.Logger;
 
 //Added 'little' steps for making weapons, tools and armor. Enjoy casting and striking as a blacksmith.
@@ -53,7 +54,7 @@ public class IdlFramework {
         }
 
         RegistryHandler.preInitRegistries(event);
-
+        NetworkHandler.register();
     }
 
     @EventHandler
@@ -101,7 +102,6 @@ public class IdlFramework {
     public static void serverInit(FMLServerStartingEvent event) {
         RegistryHandler.serverRegistries(event);
     }
-
 
     private void TrashTalking() {
         if (MetaUtil.isIDLLoaded)

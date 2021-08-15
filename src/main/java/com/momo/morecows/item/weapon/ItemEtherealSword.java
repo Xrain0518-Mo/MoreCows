@@ -1,6 +1,5 @@
 package com.momo.morecows.item.weapon;
 
-import com.momo.morecows.item.ItemSwordBase;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import net.minecraft.enchantment.Enchantment;

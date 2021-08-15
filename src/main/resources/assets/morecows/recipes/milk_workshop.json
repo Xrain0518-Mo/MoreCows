@@ -6,8 +6,7 @@
     "DDD"
   ],
   "key": {
-    "A": {
-      "item": [
+    "A": [
         {
           "item": "minecraft:planks",
           "data": 0
@@ -32,8 +31,7 @@
           "item": "minecraft:planks",
           "data": 5
         }
-      ]
-    },
+      ],
     "B": {
       "item": "minecraft:iron_ingot"
     },

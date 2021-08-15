@@ -1,4 +1,4 @@
-package com.momo.morecows.item;
+package com.momo.morecows.item.armor;
 
 import com.momo.morecows.util.CommonFunctions;
 import com.momo.morecows.util.IHasModel;

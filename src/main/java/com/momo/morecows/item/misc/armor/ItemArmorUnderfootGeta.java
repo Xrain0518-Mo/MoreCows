@@ -1,7 +1,7 @@
 package com.momo.morecows.item.misc.armor;
 
 import com.momo.morecows.item.IGuaEnhance;
-import com.momo.morecows.item.ItemArmorBase;
+import com.momo.morecows.item.armor.ItemArmorBase;
 import com.momo.morecows.util.CommonDef;
 import com.momo.morecows.util.IDLSkillNBT;
 import com.momo.morecows.util.Reference;

@@ -4,7 +4,9 @@ import com.momo.morecows.init.ModCreativeTab;
 import com.momo.morecows.item.food.ItemCheese;
 import com.momo.morecows.item.food.ItemDrinkBase;
 import com.momo.morecows.item.food.ItemRottenCheese;
+import com.momo.morecows.item.weapon.ItemMilkBall;
 import net.minecraft.item.Item;
+import net.minecraftforge.fml.common.Mod;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +30,8 @@ public class ModItems {
 	public static final Item ROTTEN_CHEESE = new ItemRottenCheese("rotten_cheese", 3, 1.0F, false);
 	public static final Item CREAMER = new ItemBase("creamer").setCreativeTab(ModCreativeTab.MORECOWS_TAB);
 	public static final Item ROTTEN_CREAMER = new ItemBase("rotten_creamer").setCreativeTab(ModCreativeTab.MORECOWS_TAB);
+
+	public static final Item MILK_BALL = new ItemMilkBall("milk_ball").setCreativeTab(ModCreativeTab.MORECOWS_TAB);
 
 
 	/*

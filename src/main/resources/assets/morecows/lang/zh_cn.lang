@@ -1,10 +1,15 @@
 itemGroup.morecows=更多牛
 
+#生物
 entity.lava_cow.name=熔岩牛
 entity.water_cow.name=水牛
 entity.beefroot.name=甜菜犇
 entity.zombie_cow.name=僵尸牛
 entity.skeleton_cow.name=骷髅牛
+
+#投掷物
+entity.milk_ball.name=牛奶球
+item.milk_ball.name=牛奶球
 
 tile.beefroot_beetroot.name=甜菜犇的甜菜
 tile.milk_workshop.name=奶工坊

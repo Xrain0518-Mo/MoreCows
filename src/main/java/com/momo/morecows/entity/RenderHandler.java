@@ -2,8 +2,13 @@ package com.momo.morecows.entity;
 
 import com.momo.morecows.entity.creatures.misc.*;
 import com.momo.morecows.entity.creatures.render.*;
+import com.momo.morecows.entity.projectiles.EntityMilkBall;
+import com.momo.morecows.item.ModItems;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.RenderItem;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;
+import net.minecraft.client.renderer.entity.RenderSnowball;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 
@@ -17,7 +22,6 @@ public class RenderHandler {
                 return new RenderLavaCow(manager);
             }
         });
-
 
         RenderingRegistry.registerEntityRenderingHandler(EntityWaterCow.class, new IRenderFactory<EntityWaterCow>() {
             @Override
@@ -45,6 +49,12 @@ public class RenderHandler {
             public Render<? super EntitySkeletonCow> createRenderFor(RenderManager manager) {
                 return new RenderSkeletonCow(manager);
             }
+        });
+
+        RenderingRegistry.registerEntityRenderingHandler(EntityMilkBall.class, manager ->
+        {
+            RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
+            return new RenderSnowball<EntityMilkBall>(manager, ModItems.MILK_BALL, renderItem);
         });
     }
 }

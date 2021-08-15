@@ -26,16 +26,16 @@ public class GuiMilkWorkshop extends GuiContainer {
 
     @Override
     public void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY){
-        int left = (this.width - this.xSize / 2);
-        int top = (this.height - this.ySize / 2);
         GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
         this.mc.getTextureManager().bindTexture(TEXTURE);
+        int left = (this.width - this.xSize) / 2;
+        int top = (this.height - this.ySize )/ 2;
         this.drawTexturedModalRect(left, top, 0, 0, this.xSize, this.ySize);
     }
 
     @Override
     protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY){
         String text = I18n.format("tile.milk_workshop.name");
-        this.drawCenteredString(this.fontRenderer, text, this.xSize / 2, 6, 0x00404040);
+        this.fontRenderer.drawString(text, this.xSize / 2 - this.fontRenderer.getStringWidth(text) / 2, 6, 4210752);
     }
 }

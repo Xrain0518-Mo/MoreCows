@@ -21,7 +21,7 @@ public class ItemRottenCheese extends ItemFoodBase implements IHasModel {
         {
             ItemDrinkBase.addDuration(entityLiving);
 
-            entityLiving.addPotionEffect(new PotionEffect(MobEffects.HUNGER, 60*20, 0, false, true));
+            entityLiving.addPotionEffect(new PotionEffect(MobEffects.HUNGER, 120*20, 0, false, true));
         }
 
         super.onItemUseFinish(stack, worldIn, entityLiving);

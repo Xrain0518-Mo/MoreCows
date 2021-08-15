@@ -1,19 +1,27 @@
 package com.momo.morecows.entity;
 
 import com.momo.morecows.entity.creatures.misc.*;
+import com.momo.morecows.entity.projectiles.EntityIdlProjectile;
+import com.momo.morecows.entity.projectiles.EntityMilkBall;
 import com.momo.morecows.util.Reference;
 import com.momo.morecows.IdlFramework;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.datafix.DataFixer;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.EntityEntry;
+import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
+import net.minecraftforge.registries.IForgeRegistry;
 
+@Mod.EventBusSubscriber
 public class ModEntityInit {
     private static int ENTITY_NEXT_ID = 1;
     public static void registerEntities()
     {
         //Examples
-//        registerEntity("moroon_orbital_beacon", EntityMoroonBombBeacon.class);
 //        registerEntity("idealland_whitetower_core", EntityIDLWhiteTowerCore.class, ENTITY_NEXT_ID, 128, 0xeeee00, 0xffffff);
         registerEntity("lava_cow", EntityLavaCow.class,0x800000, 0xff4500);
         registerEntity("water_cow", EntityWaterCow.class,0x00008b, 0x87CEFA);
@@ -41,15 +49,20 @@ public class ModEntityInit {
 
     private static void registerEntity(String name, Class<? extends Entity> entity, int id, int range, int color1, int color2){
         EntityRegistry.registerModEntity(new ResourceLocation(Reference.MOD_ID + ":" + name),
-                entity,
-                name,
-                id,
-                IdlFramework.instance,
-                range,
-                1,
-                true,
-                color1, color2
-                );
+                entity, name, id, IdlFramework.instance, range, 1, true, color1, color2);
         ENTITY_NEXT_ID++;
+    }
+
+    //projectiles registry
+
+    public static final EntityEntry MILK_BALL =
+            EntityEntryBuilder.create().entity(EntityMilkBall.class).id(EntityMilkBall.ID, 6).name(EntityMilkBall.NAME)
+                    .tracker(64, 10, true).build();
+
+    @SubscribeEvent
+    public static void onProjectilesRegistry(RegistryEvent.Register<EntityEntry>event)
+    {
+        IForgeRegistry<EntityEntry> registry = event.getRegistry();
+        registry.register(MILK_BALL);
     }
 }

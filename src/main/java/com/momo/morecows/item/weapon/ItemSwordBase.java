@@ -1,7 +1,9 @@
-package com.momo.morecows.item;
+package com.momo.morecows.item.weapon;
 
 import com.momo.morecows.init.ModCreativeTab;
 import com.momo.morecows.IdlFramework;
+import com.momo.morecows.item.IGuaEnhance;
+import com.momo.morecows.item.ModItems;
 import com.momo.morecows.util.CommonFunctions;
 import com.momo.morecows.util.IDLSkillNBT;
 import com.momo.morecows.util.IHasModel;
@@ -11,15 +13,18 @@ import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.EnumRarity;
-import net.minecraft.item.ItemSpade;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemSword;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
-public class ItemSpadeBase extends ItemSpade implements IHasModel {
+import static com.momo.morecows.util.IDLSkillNBT.GetGuaEnhance;
+
+public class ItemSwordBase extends ItemSword implements IHasModel {
 	private boolean overrideRarity = false;
 	private EnumRarity enumRarity = EnumRarity.COMMON;
 	protected boolean showGuaSocketDesc = false;
@@ -31,9 +36,9 @@ public class ItemSpadeBase extends ItemSpade implements IHasModel {
 	protected boolean glitters = false;
 
 	//for accessing the private value
-	protected ToolMaterial toolMaterial;
+	protected Item.ToolMaterial toolMaterial;
 
-	public ItemSpadeBase(String name, ToolMaterial material)
+	public ItemSwordBase(String name, Item.ToolMaterial material)
 	{
 		super(material);
 		setUnlocalizedName(name);
@@ -45,7 +50,7 @@ public class ItemSpadeBase extends ItemSpade implements IHasModel {
 		InitItem();
 	}
 
-	public ItemSpadeBase setRarity(EnumRarity enumRarity)
+	public ItemSwordBase setRarity(EnumRarity enumRarity)
 	{
 		overrideRarity = true;
 		this.enumRarity = enumRarity;
@@ -84,7 +89,7 @@ public class ItemSpadeBase extends ItemSpade implements IHasModel {
 	public void onUsingTick(ItemStack stack, EntityLivingBase living, int count) {
 		//Particle;
 		super.onUsingTick(stack, living, count);
-		//Idealland.LogWarning(String.format("base onUsingTick %s",count));
+		//IdlFramework.LogWarning(String.format("base onUsingTick %s",count));
 
 		if (living.world.isRemote)
 		{
@@ -111,6 +116,7 @@ public class ItemSpadeBase extends ItemSpade implements IHasModel {
 	{
 		IdlFramework.proxy.registerItemRenderer(this, 0, "inventory");
 	}
+
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void addInformation(ItemStack stack, World world, List<String> tooltip, ITooltipFlag flag) {
