@@ -53,11 +53,13 @@ effect.delayed=Delayed
 potion.effect.delayed=Delayed Potion
 splash_potion.effect.delayed=Splash Potion of Delayed
 lingering_potion.effect.delayed=Lingering Potion of Delayed
+tipped_arrow.effect.delayed=Arrow of delayed
 
 effect.purify=Purify
 potion.effect.purify=Purify Potion
 splash_potion.effect.purify=Splash Potion of Purify
 lingering_potion.effect.purify=Lingering Potion of Purify
+tipped_arrow.effect.purify=Arrow of purify
 
 advancements.morecows.root.title=A bucket of milk, please!
 advancements.morecows.root.description=Breed a cow or mooshroom

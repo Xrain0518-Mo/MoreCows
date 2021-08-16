@@ -53,11 +53,13 @@ effect.delayed=延时
 potion.effect.delayed=延时药水
 splash_potion.effect.delayed=喷溅型延时药水
 lingering_potion.effect.delayed=滞留型延时药水
+tipped_arrow.effect.delayed=延时之箭
 
 effect.purify=净化
 potion.effect.purify=净化药水
 splash_potion.effect.purify=喷溅型净化药水
 lingering_potion.effect.purify=滞留型净化药水
+tipped_arrow.effect.purify=净化之箭
 
 advancements.morecows.root.title=要一桶牛奶!
 advancements.morecows.root.description=繁殖一头牛或哞菇

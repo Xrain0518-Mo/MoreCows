@@ -62,13 +62,14 @@ public class ItemDrinkBase extends ItemBase implements IHasModel
 
         for (int i = 0; i < activePotionEffects.size(); i++) {
             PotionEffect effect = (PotionEffect)activePotionEffects.toArray()[i];
-            if(effect.getPotion() == MobEffects.HUNGER )
+            if(!effect.getIsAmbient() && effect.getPotion() == MobEffects.HUNGER )
             {
                 if(effect.getAmplifier() >= 3) amplifierIn = 3;
                 else amplifierIn = effect.getAmplifier() + 1;
                 entityLiving.addPotionEffect(new PotionEffect(effect.getPotion(), effect.getDuration() + 120*20, amplifierIn, effect.getIsAmbient(), true));
             }
-            else {
+            else if(!effect.getIsAmbient())
+            {
                 entityLiving.addPotionEffect(new PotionEffect(effect.getPotion(), effect.getDuration() + 120*20, effect.getAmplifier(), effect.getIsAmbient(), true));
             }
         }
