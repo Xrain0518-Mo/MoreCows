@@ -1,8 +1,8 @@
 package com.momo.morecows.entity.creatures.ai;
 
 import com.momo.morecows.util.EntityUtil;
-import com.momo.morecows.entity.projectiles.EntityIdlProjectile;
-import com.momo.morecows.entity.projectiles.ProjectileArgs;
+import com.momo.morecows.entity.tiles.EntityIdlProjectile;
+import com.momo.morecows.entity.tiles.ProjectileArgs;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.ai.EntityAIBase;

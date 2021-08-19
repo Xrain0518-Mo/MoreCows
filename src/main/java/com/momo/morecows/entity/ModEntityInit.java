@@ -1,8 +1,7 @@
 package com.momo.morecows.entity;
 
 import com.momo.morecows.entity.creatures.misc.*;
-import com.momo.morecows.entity.projectiles.EntityIdlProjectile;
-import com.momo.morecows.entity.projectiles.EntityMilkBall;
+import com.momo.morecows.entity.tiles.EntityMilkBall;
 import com.momo.morecows.util.Reference;
 import com.momo.morecows.IdlFramework;
 import net.minecraft.entity.Entity;
@@ -53,7 +52,7 @@ public class ModEntityInit {
         ENTITY_NEXT_ID++;
     }
 
-    //projectiles registry
+    //tiles registry
 
     public static final EntityEntry MILK_BALL =
             EntityEntryBuilder.create().entity(EntityMilkBall.class).id(EntityMilkBall.ID, 6).name(EntityMilkBall.NAME)

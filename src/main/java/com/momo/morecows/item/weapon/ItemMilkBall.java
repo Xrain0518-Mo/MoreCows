@@ -1,6 +1,6 @@
 package com.momo.morecows.item.weapon;
 
-import com.momo.morecows.entity.projectiles.EntityMilkBall;
+import com.momo.morecows.entity.tiles.EntityMilkBall;
 import com.momo.morecows.item.ItemBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;

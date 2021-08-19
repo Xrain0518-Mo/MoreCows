@@ -1,8 +1,8 @@
 package com.momo.morecows.item.weapon;
 
 import com.momo.morecows.item.ItemAdaptingBase;
-import com.momo.morecows.entity.projectiles.EntityIdlProjectile;
-import com.momo.morecows.entity.projectiles.ProjectileArgs;
+import com.momo.morecows.entity.tiles.EntityIdlProjectile;
+import com.momo.morecows.entity.tiles.ProjectileArgs;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.EntityLivingBase;

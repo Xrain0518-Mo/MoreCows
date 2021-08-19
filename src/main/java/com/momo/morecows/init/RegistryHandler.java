@@ -4,6 +4,7 @@ import com.momo.morecows.enchantments.ModEnchantmentInit;
 import com.momo.morecows.entity.RenderHandler;
 import com.momo.morecows.blocks.ModBlocks;
 import com.momo.morecows.entity.ModEntityInit;
+import com.momo.morecows.entity.tiles.blockTiles.TileEntityMilkWorkshop;
 import com.momo.morecows.item.ModItems;
 
 import com.momo.morecows.item.potions.ModPotionType;
@@ -15,6 +16,7 @@ import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionType;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
@@ -36,6 +38,9 @@ public class RegistryHandler {
 	@SubscribeEvent
 	public static void onBlockRegister(RegistryEvent.Register<Block> event) {
 		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
+
+		//BlockTile
+		TileEntity.register(TileEntityMilkWorkshop.ID, TileEntityMilkWorkshop.class);
 	}
 
 	@SubscribeEvent

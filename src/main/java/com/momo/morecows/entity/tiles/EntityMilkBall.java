@@ -1,4 +1,4 @@
-package com.momo.morecows.entity.projectiles;
+package com.momo.morecows.entity.tiles;
 
 import com.momo.morecows.item.ModItems;
 import net.minecraft.entity.EntityLivingBase;

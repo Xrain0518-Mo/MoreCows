@@ -1,7 +1,7 @@
 package com.momo.morecows.item.skills;
 
-import com.momo.morecows.entity.projectiles.EntityIdlProjectile;
-import com.momo.morecows.entity.projectiles.ProjectileArgs;
+import com.momo.morecows.entity.tiles.EntityIdlProjectile;
+import com.momo.morecows.entity.tiles.ProjectileArgs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;

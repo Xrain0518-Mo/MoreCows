@@ -1,4 +1,4 @@
-package com.momo.morecows.entity.projectiles;
+package com.momo.morecows.entity.tiles;
 
 import net.minecraft.nbt.NBTTagCompound;
 

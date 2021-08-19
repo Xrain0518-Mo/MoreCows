@@ -2,13 +2,6 @@
   "forge_marker": 1,
   "defaults": {
     "model": "minecraft:cube",
-    "display": {
-      "firstperson_righthand": {
-        "rotation": [0, 135, 0],
-        "translation": [0, 0, 0],
-        "scale": [0.40, 0.40, 0.40]
-      }
-    },
     "textures": {
       "particle": "morecows:blocks/milk_workshop_front",
       "down": "morecows:blocks/milk_workshop_bottom",
