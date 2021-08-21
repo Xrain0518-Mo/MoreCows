@@ -1,9 +1,6 @@
 package com.momo.morecows.network.MilkWorkshop;
 
 import com.momo.morecows.entity.tiles.blockTiles.TileEntityMilkWorkshop;
-import com.momo.morecows.item.ModItems;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
@@ -16,5 +13,5 @@ public class SlotMilkWorkMilkIn extends SlotItemHandler {
     }
 
     @Override
-    public boolean isItemValid(ItemStack stack) { return TileEntityMilkWorkshop.isDownMaterials(stack); }
+    public boolean isItemValid(ItemStack stack) { return TileEntityMilkWorkshop.isMaterials(stack, 1); }
 }

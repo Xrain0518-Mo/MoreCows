@@ -14,12 +14,14 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.SlotItemHandler;
 
+import javax.annotation.Nonnull;
+
 public class ContainerMilkWorkshop extends Container {
     private final World world;
     private final BlockPos pos;
     private int compressorProgress = 0;
 
-    public ContainerMilkWorkshop(EntityPlayer player, World world, int x, int y, int z){
+    public ContainerMilkWorkshop(EntityPlayer player, World world, int x, int y, int z) {
         this.world = world;
         this.pos = new BlockPos(x, y, z);
 
@@ -45,13 +47,13 @@ public class ContainerMilkWorkshop extends Container {
     }
 
     @Override
-    public boolean canInteractWith(EntityPlayer playerIn){
+    public boolean canInteractWith(EntityPlayer playerIn) {
         return playerIn.world.equals(this.world) && playerIn.getDistanceSq(this.pos) <= 64.0;
     }
 
+    @Nonnull
     @Override
-    public ItemStack transferStackInSlot(EntityPlayer playerIn, int index)
-    {
+    public ItemStack transferStackInSlot(@Nonnull EntityPlayer playerIn, int index) {
         ItemStack itemstack = ItemStack.EMPTY;
         Slot slot = this.inventorySlots.get(index);
 
@@ -65,51 +67,33 @@ public class ContainerMilkWorkshop extends Container {
                 }
 
                 slot.onSlotChange(itemstack1, itemstack);
-            }
-            else if (index != 1 && index != 0)
-            {
-                if(TileEntityMilkWorkshop.isUpMaterials(itemstack1))
-                {
-                    if (!this.mergeItemStack(itemstack1, 0, 1, false))
-                    {
+            } else if (index != 1 && index != 0) {
+                if (TileEntityMilkWorkshop.isMaterials(itemstack1, 0)) {
+                    if (!this.mergeItemStack(itemstack1, 0, 1, false)) {
                         return ItemStack.EMPTY;
                     }
-                }
-                else if (TileEntityMilkWorkshop.isDownMaterials(itemstack1))
-                {
-                    if (!this.mergeItemStack(itemstack1, 1, 2, false))
-                    {
+                } else if (TileEntityMilkWorkshop.isMaterials(itemstack1, 1)) {
+                    if (!this.mergeItemStack(itemstack1, 1, 2, false)) {
                         return ItemStack.EMPTY;
                     }
-                }
-                else if (index >= 4 && index < 31)
-                {
-                    if (!this.mergeItemStack(itemstack1, 31, 40, false))
-                    {
+                } else if (index >= 4 && index < 31) {
+                    if (!this.mergeItemStack(itemstack1, 31, 40, false)) {
                         return ItemStack.EMPTY;
                     }
-                }
-                else if (index >= 31 && index < 40 && !this.mergeItemStack(itemstack1, 4, 31, false))
-                {
+                } else if (index >= 31 && index < 40 && !this.mergeItemStack(itemstack1, 4, 31, false)) {
                     return ItemStack.EMPTY;
                 }
-            }
-            else if (!this.mergeItemStack(itemstack1, 4, 40, false))
-            {
+            } else if (!this.mergeItemStack(itemstack1, 4, 40, false)) {
                 return ItemStack.EMPTY;
             }
 
-            if (itemstack1.isEmpty())
-            {
+            if (itemstack1.isEmpty()) {
                 slot.putStack(ItemStack.EMPTY);
-            }
-            else
-            {
+            } else {
                 slot.onSlotChanged();
             }
 
-            if (itemstack1.getCount() == itemstack.getCount())
-            {
+            if (itemstack1.getCount() == itemstack.getCount()) {
                 return ItemStack.EMPTY;
             }
 
@@ -120,27 +104,28 @@ public class ContainerMilkWorkshop extends Container {
 
     //CompressorProgress
 
-    public int getCompressorProgress()
-    {
+    public int getCompressorProgress() {
         return this.compressorProgress;
     }
 
     @Override
-    public void detectAndSendChanges()
-    {
+    public void detectAndSendChanges() {
         super.detectAndSendChanges();
         TileEntity tileEntity = world.getTileEntity(this.pos);
-        if(tileEntity instanceof TileEntityMilkWorkshop){
+        if (tileEntity instanceof TileEntityMilkWorkshop) {
             int compressorProgress = ((TileEntityMilkWorkshop) tileEntity).getCompressorProgress();
-            if(compressorProgress != this.compressorProgress){
+            if (compressorProgress != this.compressorProgress) {
                 this.compressorProgress = compressorProgress;
-                for(IContainerListener listener : this.listeners) listener.sendWindowProperty(this,0, compressorProgress);
+                for (IContainerListener listener : this.listeners)
+                    listener.sendWindowProperty(this, 0, compressorProgress);
             }
         }
     }
 
     @Override
     @SideOnly(Side.CLIENT)
-    public void updateProgressBar(int id, int data) { if(id == 0) this.compressorProgress = data; }
+    public void updateProgressBar(int id, int data) {
+        if (id == 0) this.compressorProgress = data;
+    }
 
 }

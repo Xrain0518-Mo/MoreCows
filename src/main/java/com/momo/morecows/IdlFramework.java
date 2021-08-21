@@ -1,6 +1,10 @@
 package com.momo.morecows;
 
-import com.momo.morecows.init.*;
+import com.momo.morecows.init.ModConfig;
+import com.momo.morecows.init.ModRecipes;
+import com.momo.morecows.init.ModSpawn;
+import com.momo.morecows.init.RegistryHandler;
+import com.momo.morecows.item.ModItems;
 import com.momo.morecows.item.potions.ModPotionType;
 import com.momo.morecows.keys.KeyboardManager;
 import com.momo.morecows.meta.MetaUtil;
@@ -8,6 +12,9 @@ import com.momo.morecows.network.NetworkHandler;
 import com.momo.morecows.proxy.ProxyBase;
 import com.momo.morecows.util.CommonDef;
 import com.momo.morecows.util.Reference;
+import com.momo.morecows.util.recipes.RecipesManager;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -16,12 +23,12 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
-import net.minecraftforge.fml.common.network.NetworkRegistry;
 import org.apache.logging.log4j.Logger;
 
 //Added 'little' steps for making weapons, tools and armor. Enjoy casting and striking as a blacksmith.
 
-@Mod(modid = IdlFramework.MODID, name = IdlFramework.NAME, version = IdlFramework.VERSION)//dependencies = "required-after:Forge@[14.23.5.2705,)"
+@Mod(modid = IdlFramework.MODID, name = IdlFramework.NAME, version = IdlFramework.VERSION)
+//dependencies = "required-after:Forge@[14.23.5.2705,)"
 public class IdlFramework {
     public static final String MODID = "morecows";
     public static final String NAME = "MoreCows";
@@ -41,16 +48,14 @@ public class IdlFramework {
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
 
-        if (MODID.equals("untitled"))
-        {
+        if (MODID.equals("untitled")) {
             logger.error("Please change your mod id in the main class.");
-            
+
         }
 
-        if (Reference.CLIENT_PROXY_CLASS.indexOf("somebody.idlframewok.proxy.ClientProxy") > 0)
-        {
+        if (Reference.CLIENT_PROXY_CLASS.indexOf("somebody.idlframewok.proxy.ClientProxy") > 0) {
             logger.warn("Have you changed your package name to author and modname?");
-            
+
         }
 
         RegistryHandler.preInitRegistries(event);
@@ -62,17 +67,16 @@ public class IdlFramework {
         ModRecipes.Init();
         RegisterTileEntity();
         RegistryHandler.initRegistries(event);
-        if (!proxy.isServer())
-        {
+        if (!proxy.isServer()) {
             KeyboardManager.init();
         }
         NetworkHandler.init();
 
         ModPotionType.register();
 
-		LogWarning("%s has finished its initializations", MODID);
-
-	}
+        LogWarning("%s has finished its initializations", MODID);
+        BaseMilkWorkshopRecipes();
+    }
 
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
@@ -104,11 +108,9 @@ public class IdlFramework {
     }
 
     private void TrashTalking() {
-        if (MetaUtil.isIDLLoaded)
-        {
+        if (MetaUtil.isIDLLoaded) {
             IdlFramework.Log("[Idealland Framework] Bow to Idealland.");
-        }
-        else {
+        } else {
             IdlFramework.Log("[Idealland Framework] Made with Idealland Framework.");
         }
     }
@@ -144,6 +146,23 @@ public class IdlFramework {
 //        {
         logger.info(String.format(str, args));
 //        }
+    }
+
+    public static void BaseMilkWorkshopRecipes() {
+        RecipesManager.addMilkWorkshopRecipe(new ItemStack(Items.SUGAR), new ItemStack(Items.MILK_BUCKET)
+                , new ItemStack(ModItems.CHEESE), new ItemStack(Items.BUCKET));
+
+        RecipesManager.addMilkWorkshopRecipe(new ItemStack(Items.SUGAR), new ItemStack(ModItems.ROTTEN_MILK)
+                , new ItemStack(ModItems.ROTTEN_CHEESE), new ItemStack(Items.BUCKET));
+
+        RecipesManager.addMilkWorkshopRecipe(new ItemStack(Items.SNOWBALL), new ItemStack(Items.MILK_BUCKET)
+                , new ItemStack(ModItems.MILK_BALL), new ItemStack(Items.BUCKET));
+
+        RecipesManager.addMilkWorkshopRecipe(new ItemStack(Items.GLOWSTONE_DUST), new ItemStack(ModItems.CHEESE)
+                , new ItemStack(ModItems.CREAMER), ItemStack.EMPTY);
+
+        RecipesManager.addMilkWorkshopRecipe(new ItemStack(Items.GLOWSTONE_DUST), new ItemStack(ModItems.ROTTEN_CHEESE)
+                , new ItemStack(ModItems.ROTTEN_CREAMER), ItemStack.EMPTY);
     }
 
 }
