@@ -29,8 +29,13 @@ public class GuiMilkWorkshop extends GuiContainer {
         GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
         this.mc.getTextureManager().bindTexture(TEXTURE);
         int left = (this.width - this.xSize) / 2;
-        int top = (this.height - this.ySize )/ 2;
+        int top = (this.height - this.ySize) / 2;
         this.drawTexturedModalRect(left, top, 0, 0, this.xSize, this.ySize);
+
+        int barHeight = 16;
+        //barWidth = getCompressorProgress * (Y / Ticks)
+        int barWidth = Math.round(((ContainerMilkWorkshop) this.inventorySlots).getCompressorProgress() * 0.12F);
+        this.drawTexturedModalRect(left + 79, top + 34, 176, 0, barWidth, barHeight);
     }
 
     @Override

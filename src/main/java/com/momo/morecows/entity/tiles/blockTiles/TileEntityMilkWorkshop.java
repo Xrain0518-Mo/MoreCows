@@ -1,11 +1,15 @@
 package com.momo.morecows.entity.tiles.blockTiles;
 
 import javax.annotation.Nonnull;
+
+import com.momo.morecows.item.ModItems;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.util.ITickable;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
@@ -14,14 +18,18 @@ import net.minecraftforge.items.ItemStackHandler;
 import javax.annotation.Nullable;
 
 @SuppressWarnings("NullableProblems")
-public class TileEntityMilkWorkshop extends TileEntity {
-    public static final String ID = "milk_workshop";
+public class TileEntityMilkWorkshop extends TileEntity implements ITickable {
 
-    private final ItemStackHandler inventory = new ItemStackHandler(4);
+    public static final String ID = "milk_workshop";
+    public final ItemStackHandler inventory = new ItemStackHandler(4);
+    private int compressorProgress = 0;
+
+    public int getCompressorProgress(){return this.compressorProgress;}
 
     @Override
     public void readFromNBT(NBTTagCompound compound)
     {
+        this.compressorProgress = compound.getInteger("Progress");
         this.inventory.deserializeNBT(compound.getCompoundTag("Inventory"));
         super.readFromNBT(compound);
     }
@@ -29,8 +37,36 @@ public class TileEntityMilkWorkshop extends TileEntity {
     @Override
     public NBTTagCompound writeToNBT(NBTTagCompound compound)
     {
+        compound.setInteger("Progress", this.compressorProgress);
         compound.setTag("Inventory",this.inventory.serializeNBT());
+        this.markDirty();
         return super.writeToNBT(compound);
+    }
+
+    @Override
+    public void update()
+    {
+        if (!this.world.isRemote) {
+            boolean canProgress = (Items.SUGAR.equals(this.inventory.extractItem(0, 1, true).getItem()) && Items.MILK_BUCKET.equals(this.inventory.extractItem(1, 1, true).getItem()));
+            boolean canOutPut = (this.inventory.insertItem(2, new ItemStack(ModItems.CHEESE), true).isEmpty() && this.inventory.insertItem(3, new ItemStack(Items.BUCKET), true).isEmpty());
+
+            if (canProgress && canOutPut)
+            {
+                this.compressorProgress += 1;
+                if (this.compressorProgress >= 200) {
+                    this.inventory.insertItem(2, new ItemStack(ModItems.CHEESE), false);
+                    this.inventory.insertItem(3, new ItemStack(Items.BUCKET), false);
+                    this.inventory.extractItem(0, 1, false);
+                    this.inventory.extractItem(1, 1, false);
+                    this.compressorProgress = 0;
+                }
+                this.markDirty();
+            }
+            else if(this.compressorProgress > 0) {
+                this.compressorProgress = 0;
+                this.markDirty();
+            }
+        }
     }
 
     @Override
@@ -81,7 +117,8 @@ public class TileEntityMilkWorkshop extends TileEntity {
             if (slot == 0 && facing == EnumFacing.UP)
             {
                 return inventory.insertItem(0, stack, simulate);
-            } else if (slot == 1 && stack.getItem() == Items.BUCKET)
+            }
+            else if (slot == 1 && (stack.getItem() == Items.MILK_BUCKET || stack.getItem() == ModItems.ROTTEN_MILK))
             {
                 if (facing != EnumFacing.UP && facing != EnumFacing.DOWN)
                     return inventory.insertItem(1, stack, simulate);
@@ -95,7 +132,7 @@ public class TileEntityMilkWorkshop extends TileEntity {
         {
             if (facing == EnumFacing.DOWN)
             {
-                return inventory.getStackInSlot(4).isEmpty() ? inventory.extractItem(3, amount, simulate) : inventory.extractItem(4, amount, simulate);
+                return inventory.getStackInSlot(3).isEmpty() ? inventory.extractItem(2, amount, simulate) : inventory.extractItem(3, amount, simulate);
             }
             return ItemStack.EMPTY;
         }
@@ -103,7 +140,12 @@ public class TileEntityMilkWorkshop extends TileEntity {
         @Override
         public int getSlotLimit(int slot)
         {
-            return 0;
+            return inventory.getSlotLimit(slot);
+        }
+
+        @Override
+        public boolean isItemValid(int slot, ItemStack stack){
+            return (slot == 0 || slot == 1);
         }
     }
 }
