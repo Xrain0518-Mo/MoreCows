@@ -29,7 +29,6 @@ public class MilkWorkshopRecipe {
         return progress;
     }
 
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -37,6 +36,6 @@ public class MilkWorkshopRecipe {
 
         MilkWorkshopRecipe that = (MilkWorkshopRecipe) o;
 
-        return ItemStackUtil.areItemStackListEqual(that.getOutputs(), getOutputs()) || ItemStackUtil.areItemStackListEqual(that.getInputs(), getInputs());
+        return ItemStackUtil.areItemStackListEqual(that.getOutputs(), getOutputs()) && ItemStackUtil.areItemStackListEqual(that.getInputs(), getInputs());
     }
 }

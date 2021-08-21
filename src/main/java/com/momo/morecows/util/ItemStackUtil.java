@@ -6,10 +6,10 @@ import java.util.List;
 
 public class ItemStackUtil {
 
-    // don't matches amount and don't matches null
+    // don't matches amount
     public static boolean areItemStackEqual(ItemStack stackA, ItemStack stackB) {
         if (stackA.isEmpty() && stackB.isEmpty()) {
-            return false;
+            return true;
         } else {
             return isItemStackEqual(stackA, stackB);
         }

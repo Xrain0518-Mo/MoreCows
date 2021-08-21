@@ -1,6 +1,7 @@
 package com.momo.morecows.util.recipes;
 
 import com.google.common.collect.Lists;
+import com.momo.morecows.util.ItemStackUtil;
 import net.minecraft.item.ItemStack;
 
 import java.util.ArrayList;
@@ -22,24 +23,30 @@ public class RecipesManager {
         addMilkWorkshopRecipe(Lists.newArrayList(inputUp, inputDown), Lists.newArrayList(outputA, outputB));
     }
 
+    public static void addMilkWorkshopRecipe(List<ItemStack> inputs, List<ItemStack> outputs) {
+        addMilkWorkshopRecipe(inputs, outputs, 200);
+    }
+
     public static void addMilkWorkshopRecipe(List<ItemStack> inputs, List<ItemStack> outputs, int progress) {
         if (inputs.size() != 2 || outputs.size() != 2) {
-           throw new IllegalArgumentException();
+            throw new IllegalArgumentException();
         } else {
             MilkWorkshopRecipe recipeTemp = new MilkWorkshopRecipe(inputs, outputs, progress);
-            if (getMilkWorkshopRecipe(recipeTemp) == null) {
+            if (checkMilkWorkshopRecipeRepeat(recipeTemp)) {
                 milkWorkshopRecipes.add(recipeTemp);
             }
         }
     }
 
-    public static void addMilkWorkshopRecipe(List<ItemStack> inputs, List<ItemStack> outputs) {
-        addMilkWorkshopRecipe(inputs, outputs, 200);
+    // has output
+    public static boolean checkMilkWorkshopRecipeRepeat(MilkWorkshopRecipe recipeTemp) {
+        return milkWorkshopRecipes.stream().noneMatch(recipeTemp::equals);
     }
 
+    // don't output
     public static MilkWorkshopRecipe getMilkWorkshopRecipe(MilkWorkshopRecipe recipeTemp) {
         for (MilkWorkshopRecipe recipe : milkWorkshopRecipes) {
-            if (recipe.equals(recipeTemp)) {
+            if (ItemStackUtil.areItemStackListEqual(recipe.getInputs(), recipeTemp.getInputs())) {
                 return recipe;
             }
         }

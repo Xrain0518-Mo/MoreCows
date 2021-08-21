@@ -34,8 +34,8 @@ public class GuiMilkWorkshop extends GuiContainer {
 
         int barHeight = 16;
         //barWidth = getCompressorProgress * (Y / Ticks)
-        ContainerMilkWorkshop te = (ContainerMilkWorkshop) this.inventorySlots;
-        int barWidth = Math.round(te.getCompressorProgress() * (float) (24 / te.getRecipeProgress()));
+//        ContainerMilkWorkshop te = (ContainerMilkWorkshop) this.inventorySlots;
+        int barWidth = Math.round(((ContainerMilkWorkshop) this.inventorySlots).getCompressorProgress() * 0.12F);
         this.drawTexturedModalRect(left + 79, top + 34, 176, 0, barWidth, barHeight);
     }
 
