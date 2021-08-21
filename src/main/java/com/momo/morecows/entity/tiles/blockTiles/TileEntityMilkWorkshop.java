@@ -87,8 +87,8 @@ public class TileEntityMilkWorkshop extends TileEntity implements ITickable {
 
     public class IItemHandlerWithMilkWorkshop implements IItemHandler {
 
-        // 0 -> up -> materialIn
-        // 1 -> other -> bucketIn
+        // 0 -> up -> upIn
+        // 1 -> other -> downIn
         // 2,3 -> down materialOut bucketOut
 
         private final EnumFacing facing;
@@ -118,7 +118,7 @@ public class TileEntityMilkWorkshop extends TileEntity implements ITickable {
             {
                 return inventory.insertItem(0, stack, simulate);
             }
-            else if (slot == 1 && (stack.getItem() == Items.MILK_BUCKET || stack.getItem() == ModItems.ROTTEN_MILK))
+            else if (slot == 1 && isDownMaterials(stack))
             {
                 if (facing != EnumFacing.UP && facing != EnumFacing.DOWN)
                     return inventory.insertItem(1, stack, simulate);
@@ -147,5 +147,17 @@ public class TileEntityMilkWorkshop extends TileEntity implements ITickable {
         public boolean isItemValid(int slot, ItemStack stack){
             return (slot == 0 || slot == 1);
         }
+    }
+
+    public static boolean isDownMaterials(ItemStack stack)
+    {
+        Item item = stack.getItem();
+        return (item.equals(Items.MILK_BUCKET) || item.equals(ModItems.ROTTEN_MILK) || item.equals(ModItems.CHEESE) || item.equals(ModItems.ROTTEN_CHEESE));
+    }
+
+    public static boolean isUpMaterials(ItemStack stack)
+    {
+        Item item = stack.getItem();
+        return (item.equals(Items.SUGAR) || item.equals(Items.GLOWSTONE_DUST));
     }
 }

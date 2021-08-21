@@ -1,7 +1,9 @@
 package com.momo.morecows.network.MilkWorkshop;
 
 import com.momo.morecows.entity.tiles.blockTiles.TileEntityMilkWorkshop;
+import com.momo.morecows.item.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IContainerListener;
 import net.minecraft.inventory.Slot;
@@ -50,8 +52,72 @@ public class ContainerMilkWorkshop extends Container {
     }
 
     @Override
-    public ItemStack transferStackInSlot(EntityPlayer playerIn, int index){
-        return ItemStack.EMPTY;
+    public ItemStack transferStackInSlot(EntityPlayer playerIn, int index)
+    {
+        ItemStack itemstack = ItemStack.EMPTY;
+        Slot slot = this.inventorySlots.get(index);
+
+        if (slot != null && slot.getHasStack()) {
+            ItemStack itemstack1 = slot.getStack();
+            itemstack = itemstack1.copy();
+
+            if (index == 2 || index == 3) {
+                if (!this.mergeItemStack(itemstack1, 4, 40, true)) {
+                    return ItemStack.EMPTY;
+                }
+
+                slot.onSlotChange(itemstack1, itemstack);
+            }
+            else if (index != 1 && index != 0)
+            {
+                if(TileEntityMilkWorkshop.isUpMaterials(itemstack1))
+                {
+                    if (!this.mergeItemStack(itemstack1, 0, 1, false))
+                    {
+                        return ItemStack.EMPTY;
+                    }
+                }
+                else if (TileEntityMilkWorkshop.isDownMaterials(itemstack1))
+                {
+                    if (!this.mergeItemStack(itemstack1, 1, 2, false))
+                    {
+                        return ItemStack.EMPTY;
+                    }
+                }
+                else if (index >= 4 && index < 31)
+                {
+                    if (!this.mergeItemStack(itemstack1, 31, 40, false))
+                    {
+                        return ItemStack.EMPTY;
+                    }
+                }
+                else if (index >= 31 && index < 40 && !this.mergeItemStack(itemstack1, 4, 31, false))
+                {
+                    return ItemStack.EMPTY;
+                }
+            }
+            else if (!this.mergeItemStack(itemstack1, 4, 40, false))
+            {
+                return ItemStack.EMPTY;
+            }
+
+            if (itemstack1.isEmpty())
+            {
+                slot.putStack(ItemStack.EMPTY);
+            }
+            else
+            {
+                slot.onSlotChanged();
+            }
+
+            if (itemstack1.getCount() == itemstack.getCount())
+            {
+                return ItemStack.EMPTY;
+            }
+
+            slot.onTake(playerIn, itemstack1);
+        }
+        return itemstack;
     }
 
     //CompressorProgress
