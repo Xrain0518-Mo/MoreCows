@@ -25,8 +25,14 @@ public class TileEntityMilkWorkshop extends TileEntity implements ITickable {
     public final ItemStackHandler inventory = new ItemStackHandler(4);
     private int compressorProgress = 0;
 
+    private int recipeProgress;
+
     public int getCompressorProgress() {
         return this.compressorProgress;
+    }
+
+    public int getRecipeProgress() {
+        return this.recipeProgress;
     }
 
     @Override
@@ -56,6 +62,7 @@ public class TileEntityMilkWorkshop extends TileEntity implements ITickable {
             if (recipeTrue != null) {
                 this.compressorProgress += 1;
                 if (this.compressorProgress >= recipeTrue.getProgress()) {
+                    this.recipeProgress = recipeTrue.getProgress();
                     this.inventory.extractItem(0, 1, false);
                     this.inventory.extractItem(1, 1, false);
                     this.inventory.insertItem(2, recipeTrue.getOutputs().get(0).copy(), false);
@@ -64,6 +71,7 @@ public class TileEntityMilkWorkshop extends TileEntity implements ITickable {
                 }
                 this.markDirty();
             } else if (this.compressorProgress > 0) {
+                this.recipeProgress = 0;
                 this.compressorProgress = 0;
                 this.markDirty();
             }
