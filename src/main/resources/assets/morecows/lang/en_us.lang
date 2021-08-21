@@ -64,7 +64,7 @@ tipped_arrow.effect.purify=Arrow of purify
 advancements.morecows.root.title=A bucket of milk, please!
 advancements.morecows.root.description=Breed a cow or mooshroom
 advancements.morecows.condensed_wheat.title=Will cows really eat?
-advancements.morecows.condensed_wheat.description=Get any condensed wheat
+advancements.morecows.condensed_wheat.description=Get a condensed wheat
 advancements.morecows.all_condensed_wheat.title=Condensed wheat party
 advancements.morecows.all_condensed_wheat.description=Get all condensed wheat
 advancements.morecows.bred_all_cow.title=Cow"s family!
@@ -73,6 +73,18 @@ advancements.morecows.breed_liquid_cow.title=Liquid to liquid
 advancements.morecows.breed_liquid_cow.description=Breed a liquid cow
 advancements.morecows.evil_wheat.title=Satanic ritual
 advancements.morecows.evil_wheat.description=Get a wheat looked evil
+advancements.morecows.milk_workshop.title=Local Milk Workshop
+advancements.morecows.milk_workshop.description=Get a milk workshop
+advancements.morecows.cheese.title=Easy to carry
+advancements.morecows.cheese.description=Get a cheese
+advancements.morecows.creamer.title=Looks like milk powder
+advancements.morecows.creamer.description=Get a creamer
+advancements.morecows.milk_ball.title=Ball of purify
+advancements.morecows.milk_ball.description=Get a milk ball
+advancements.morecows.rotten_milk.title=It drink terrible
+advancements.morecows.rotten_milk.description=Get a bucket of rotten milk
+advancements.morecows.kill_skeleton_cow.title=Eviler than devils
+advancements.morecows.kill_skeleton_cow.description=Kill a skeleton cow
 
 
 

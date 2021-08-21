@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_sword"
+        },
+        "title": {
+            "translate": "advancements.morecows.kill_skeleton_cow.title"
+        },
+        "description": {
+            "translate": "advancements.morecows.kill_skeleton_cow.description"
+        }
+    },
+    "parent": "morecows:main/rotten_milk",
+    "criteria": {
+        "skeleton_cow": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "morecows:skeleton_cow"
+                }
+            }
+        }
+    }
+}

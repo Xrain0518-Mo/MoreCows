@@ -1,9 +1,7 @@
 package com.momo.morecows.network.MilkWorkshop;
 
 import com.momo.morecows.entity.tiles.blockTiles.TileEntityMilkWorkshop;
-import com.momo.morecows.item.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Items;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IContainerListener;
 import net.minecraft.inventory.Slot;

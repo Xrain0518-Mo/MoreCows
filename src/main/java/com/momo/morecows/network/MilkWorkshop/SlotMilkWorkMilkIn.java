@@ -1,5 +1,6 @@
 package com.momo.morecows.network.MilkWorkshop;
 
+import com.momo.morecows.entity.tiles.blockTiles.TileEntityMilkWorkshop;
 import com.momo.morecows.item.ModItems;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -15,11 +16,5 @@ public class SlotMilkWorkMilkIn extends SlotItemHandler {
     }
 
     @Override
-    public boolean isItemValid(ItemStack stack) { return isMilk(stack); }
-
-    public boolean isMilk(ItemStack stack)
-    {
-        Item item = stack.getItem();
-        return (item == Items.MILK_BUCKET || item == ModItems.ROTTEN_MILK);
-    }
+    public boolean isItemValid(ItemStack stack) { return TileEntityMilkWorkshop.isDownMaterials(stack); }
 }
