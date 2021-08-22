@@ -20,7 +20,6 @@ public class ContainerMilkWorkshop extends Container {
     private final World world;
     private final BlockPos pos;
     private int compressorProgress = 0;
-    private int recipeProgress = 0;
 
     public ContainerMilkWorkshop(EntityPlayer player, World world, int x, int y, int z) {
         this.world = world;
@@ -109,10 +108,6 @@ public class ContainerMilkWorkshop extends Container {
         return this.compressorProgress;
     }
 
-    public int getRecipeProgress() {
-        return this.recipeProgress;
-    }
-
     @Override
     public void detectAndSendChanges() {
         super.detectAndSendChanges();
@@ -121,7 +116,6 @@ public class ContainerMilkWorkshop extends Container {
             int compressorProgress = ((TileEntityMilkWorkshop) tileEntity).getCompressorProgress();
             if (compressorProgress != this.compressorProgress) {
                 this.compressorProgress = compressorProgress;
-                this.recipeProgress = ((TileEntityMilkWorkshop) tileEntity).getRecipeProgress();
                 for (IContainerListener listener : this.listeners)
                     listener.sendWindowProperty(this, 0, compressorProgress);
             }

@@ -21,20 +21,18 @@ public class MilkWorkshopRecipe {
         return inputs;
     }
 
-    public List<ItemStack> getOutputs() {
-        return outputs;
-    }
+    public List<ItemStack> getOutputs() { return outputs; }
 
     public int getProgress() {
         return progress;
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
 
-        MilkWorkshopRecipe that = (MilkWorkshopRecipe) o;
+        MilkWorkshopRecipe that = (MilkWorkshopRecipe) object;
 
         return ItemStackUtil.areItemStackListEqual(that.getOutputs(), getOutputs()) && ItemStackUtil.areItemStackListEqual(that.getInputs(), getInputs());
     }

@@ -25,14 +25,8 @@ public class TileEntityMilkWorkshop extends TileEntity implements ITickable {
     public final ItemStackHandler inventory = new ItemStackHandler(4);
     private int compressorProgress = 0;
 
-    private int recipeProgress;
-
     public int getCompressorProgress() {
         return this.compressorProgress;
-    }
-
-    public int getRecipeProgress() {
-        return this.recipeProgress;
     }
 
     @Override
@@ -56,13 +50,11 @@ public class TileEntityMilkWorkshop extends TileEntity implements ITickable {
 
             List<ItemStack> inputs = Lists.newArrayList(inventory.getStackInSlot(0), inventory.getStackInSlot(1));
             List<ItemStack> outputs = Lists.newArrayList(inventory.getStackInSlot(2), inventory.getStackInSlot(3));
-            MilkWorkshopRecipe recipeTrue =
-                    RecipesManager.getMilkWorkshopRecipe(new MilkWorkshopRecipe(inputs, outputs, 0));
+            MilkWorkshopRecipe recipeTrue = RecipesManager.getMilkWorkshopRecipe(new MilkWorkshopRecipe(inputs, outputs, 0));
 
             if (recipeTrue != null) {
                 this.compressorProgress += 1;
                 if (this.compressorProgress >= recipeTrue.getProgress()) {
-                    this.recipeProgress = recipeTrue.getProgress();
                     this.inventory.extractItem(0, 1, false);
                     this.inventory.extractItem(1, 1, false);
                     this.inventory.insertItem(2, recipeTrue.getOutputs().get(0).copy(), false);
@@ -71,7 +63,6 @@ public class TileEntityMilkWorkshop extends TileEntity implements ITickable {
                 }
                 this.markDirty();
             } else if (this.compressorProgress > 0) {
-                this.recipeProgress = 0;
                 this.compressorProgress = 0;
                 this.markDirty();
             }
@@ -131,7 +122,7 @@ public class TileEntityMilkWorkshop extends TileEntity implements ITickable {
         @Override
         public ItemStack extractItem(int slot, int amount, boolean simulate) {
             if (facing == EnumFacing.DOWN) {
-                return inventory.getStackInSlot(3).isEmpty() ? inventory.extractItem(2, amount, simulate) : inventory.extractItem(3, amount, simulate);
+                return inventory.getStackInSlot(2).isEmpty() ? inventory.extractItem(3, amount, simulate) : inventory.extractItem(2, amount, simulate);
             }
             return ItemStack.EMPTY;
         }

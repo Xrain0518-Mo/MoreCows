@@ -10,6 +10,7 @@ import com.momo.morecows.keys.KeyboardManager;
 import com.momo.morecows.meta.MetaUtil;
 import com.momo.morecows.network.NetworkHandler;
 import com.momo.morecows.proxy.ProxyBase;
+import com.momo.morecows.recipe.MilkWorkshop;
 import com.momo.morecows.util.CommonDef;
 import com.momo.morecows.util.Reference;
 import com.momo.morecows.util.recipes.RecipesManager;
@@ -75,7 +76,9 @@ public class IdlFramework {
         ModPotionType.register();
 
         LogWarning("%s has finished its initializations", MODID);
-        BaseMilkWorkshopRecipes();
+
+        //MachineRecipe
+        MilkWorkshop.BaseMilkWorkshopRecipes();
     }
 
     @EventHandler
@@ -147,22 +150,4 @@ public class IdlFramework {
         logger.info(String.format(str, args));
 //        }
     }
-
-    public static void BaseMilkWorkshopRecipes() {
-        RecipesManager.addMilkWorkshopRecipe(new ItemStack(Items.SUGAR), new ItemStack(Items.MILK_BUCKET)
-                , new ItemStack(ModItems.CHEESE), new ItemStack(Items.BUCKET));
-
-        RecipesManager.addMilkWorkshopRecipe(new ItemStack(Items.SUGAR), new ItemStack(ModItems.ROTTEN_MILK)
-                , new ItemStack(ModItems.ROTTEN_CHEESE), new ItemStack(Items.BUCKET));
-
-        RecipesManager.addMilkWorkshopRecipe(new ItemStack(Items.SNOWBALL), new ItemStack(Items.MILK_BUCKET)
-                , new ItemStack(ModItems.MILK_BALL), new ItemStack(Items.BUCKET));
-
-        RecipesManager.addMilkWorkshopRecipe(new ItemStack(Items.GLOWSTONE_DUST), new ItemStack(ModItems.CHEESE)
-                , new ItemStack(ModItems.CREAMER), ItemStack.EMPTY);
-
-        RecipesManager.addMilkWorkshopRecipe(new ItemStack(Items.GLOWSTONE_DUST), new ItemStack(ModItems.ROTTEN_CHEESE)
-                , new ItemStack(ModItems.ROTTEN_CREAMER), ItemStack.EMPTY);
-    }
-
 }
