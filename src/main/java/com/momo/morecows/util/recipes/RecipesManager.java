@@ -46,7 +46,11 @@ public class RecipesManager {
     // don't output
     public static MilkWorkshopRecipe getMilkWorkshopRecipe(MilkWorkshopRecipe recipeTemp) {
         for (MilkWorkshopRecipe recipe : milkWorkshopRecipes) {
-            if (ItemStackUtil.areItemStackListEqual(recipe.getInputs(), recipeTemp.getInputs())) {
+            if (recipeTemp.getOutputs().get(0) != ItemStack.EMPTY || recipeTemp.getOutputs().get(1) != ItemStack.EMPTY) {
+                if (!checkMilkWorkshopRecipeRepeat(recipeTemp)) {
+                    return recipe; // fix when current recipe has output, but input was another recipe
+                }
+            } else if (ItemStackUtil.areItemStackListEqual(recipe.getInputs(), recipeTemp.getInputs())) {
                 return recipe;
             }
         }
