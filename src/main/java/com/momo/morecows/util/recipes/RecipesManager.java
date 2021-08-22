@@ -29,7 +29,7 @@ public class RecipesManager {
 
     public static void addMilkWorkshopRecipe(List<ItemStack> inputs, List<ItemStack> outputs, int progress) {
         if (inputs.size() != 2 || outputs.size() != 2) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("recipe input or output size must be equal to 2");
         } else {
             MilkWorkshopRecipe recipeTemp = new MilkWorkshopRecipe(inputs, outputs, progress);
             if (checkMilkWorkshopRecipeRepeat(recipeTemp)) {
