@@ -1,17 +1,17 @@
-package com.momo.morecows.util.recipes;
+package com.momo.morecows.recipe;
 
 import com.momo.morecows.util.ItemStackUtil;
 import net.minecraft.item.ItemStack;
 
 import java.util.List;
 
-public class MilkWorkshopRecipe {
+public class CheckRecipe {
 
     private final List<ItemStack> inputs;
     private final List<ItemStack> outputs;
     private final int progress;
 
-    public MilkWorkshopRecipe(List<ItemStack> inputs, List<ItemStack> outputs, int progress) {
+    public CheckRecipe(List<ItemStack> inputs, List<ItemStack> outputs, int progress) {
         this.inputs = inputs;
         this.outputs = outputs;
         this.progress = progress;
@@ -32,7 +32,7 @@ public class MilkWorkshopRecipe {
         if (this == object) return true;
         if (object == null || getClass() != object.getClass()) return false;
 
-        MilkWorkshopRecipe that = (MilkWorkshopRecipe) object;
+        CheckRecipe that = (CheckRecipe) object;
 
         return ItemStackUtil.areItemStackListEqual(that.getOutputs(), getOutputs()) && ItemStackUtil.areItemStackListEqual(that.getInputs(), getInputs());
     }

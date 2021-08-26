@@ -3,6 +3,7 @@ package com.momo.morecows.blocks.Machine;
 import com.momo.morecows.IdlFramework;
 import com.momo.morecows.entity.tiles.blockTiles.TileEntityMilkWorkshop;
 import com.momo.morecows.network.GuiHandler;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -26,6 +27,7 @@ public class MilkWorkshop extends MachineBase{
     public MilkWorkshop(String name, Material material)
     {
         super(name, material);
+        setSoundType(SoundType.WOOD);
     }
 
     @Override

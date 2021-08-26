@@ -28,7 +28,7 @@ public class ModPotionType {
     public static void register()
     {
         //delayed
-        PotionHelper.addMix(POTION_TYPE_DELAYED, Items.REDSTONE, POTION_TYPE_LONG_DELAYED);
+        PotionHelper.addMix(POTION_TYPE_DELAYED, Items.GLOWSTONE_DUST, POTION_TYPE_LONG_DELAYED);
         PotionHelper.addMix(PotionTypes.AWKWARD, ModItems.ROTTEN_CREAMER, POTION_TYPE_DELAYED);
 
         //purify

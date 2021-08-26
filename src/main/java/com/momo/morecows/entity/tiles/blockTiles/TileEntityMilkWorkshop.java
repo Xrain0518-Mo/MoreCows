@@ -2,7 +2,7 @@ package com.momo.morecows.entity.tiles.blockTiles;
 
 import com.google.common.collect.Lists;
 import com.momo.morecows.util.ItemStackUtil;
-import com.momo.morecows.util.recipes.MilkWorkshopRecipe;
+import com.momo.morecows.recipe.CheckRecipe;
 import com.momo.morecows.util.recipes.RecipesManager;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -50,7 +50,7 @@ public class TileEntityMilkWorkshop extends TileEntity implements ITickable {
 
             List<ItemStack> inputs = Lists.newArrayList(inventory.getStackInSlot(0), inventory.getStackInSlot(1));
             List<ItemStack> outputs = Lists.newArrayList(inventory.getStackInSlot(2), inventory.getStackInSlot(3));
-            MilkWorkshopRecipe recipeTrue = RecipesManager.getMilkWorkshopRecipe(new MilkWorkshopRecipe(inputs, outputs, 0));
+            CheckRecipe recipeTrue = RecipesManager.getMilkWorkshopRecipe(new CheckRecipe(inputs, outputs, 0));
 
             if (recipeTrue != null) {
                 this.compressorProgress += 1;
@@ -139,7 +139,7 @@ public class TileEntityMilkWorkshop extends TileEntity implements ITickable {
     }
 
     public static boolean isMaterials(ItemStack stack, int slot) {
-        for (MilkWorkshopRecipe recipe : RecipesManager.getMilkWorkshopRecipe()) {
+        for (CheckRecipe recipe : RecipesManager.getMilkWorkshopRecipe()) {
             if (ItemStackUtil.areItemStackEqual(recipe.getInputs().get(slot), stack)) {
                 return true;
             }

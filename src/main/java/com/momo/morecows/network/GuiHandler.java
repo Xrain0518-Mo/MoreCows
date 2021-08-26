@@ -1,12 +1,11 @@
 package com.momo.morecows.network;
 
-import com.momo.morecows.IdlFramework;
+
 import com.momo.morecows.network.MilkWorkshop.ContainerMilkWorkshop;
 import com.momo.morecows.network.MilkWorkshop.GuiMilkWorkshop;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.IGuiHandler;
-import net.minecraftforge.fml.common.network.NetworkRegistry;
 
 public class GuiHandler implements IGuiHandler {
     public static final int MILK_WORKSHOP = 1;

@@ -1,6 +1,5 @@
 package com.momo.morecows.blocks;
 
-import com.momo.morecows.blocks.Machine.MachineBase;
 import com.momo.morecows.blocks.Machine.MilkWorkshop;
 import com.momo.morecows.blocks.blockBush.BlockPlant;
 import com.momo.morecows.init.ModCreativeTab;
@@ -15,7 +14,7 @@ public class ModBlocks {
 
 	public static final Block BEEFROOT_BEETROOT = new BlockPlant("beefroot_beetroot", Material.PLANTS);
 	public static final Block MILK_WORKSHOP = new MilkWorkshop("milk_workshop", Material.ROCK).setCreativeTab(ModCreativeTab.MORECOWS_TAB);
-	
+
 	/*
 	 * To add a blockBush, put a line here,
 	 * -Create a json at assets.eo.blockstates
