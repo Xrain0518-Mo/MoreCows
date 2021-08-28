@@ -128,7 +128,7 @@ public class ModEnchantmentBase extends Enchantment {
         super(rarityIn, typeIn, slots);
         setRegistryName(IdlFramework.MODID, name);
         setName(name);
-        ModEnchantmentInit.ENCHANTMENT_LIST.add(this);
+        ModEnchantments.ENCHANTMENT_LIST.add(this);
         applicableEquipmentTypesOpen = slots;
         //note this slots arguments. Only enchantments in those slots will be counted!
 
@@ -205,7 +205,7 @@ public class ModEnchantmentBase extends Enchantment {
     @Override
     public boolean canApplyAtEnchantingTable(ItemStack stack) {
         //special requirement: tool or sword
-        if (applicableEquipmentTypesOpen == ModEnchantmentInit.mainHand)
+        if (applicableEquipmentTypesOpen == ModEnchantments.mainHand)
         {
             Item itemType = stack.getItem();
             if (!(itemType instanceof ItemSword) && !(itemType instanceof ItemTool)) {

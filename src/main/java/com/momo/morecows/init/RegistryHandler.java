@@ -1,6 +1,6 @@
 package com.momo.morecows.init;
 
-import com.momo.morecows.enchantments.ModEnchantmentInit;
+import com.momo.morecows.enchantments.ModEnchantments;
 import com.momo.morecows.entity.RenderHandler;
 import com.momo.morecows.blocks.ModBlocks;
 import com.momo.morecows.entity.ModEntityInit;
@@ -46,8 +46,8 @@ public class RegistryHandler {
 	@SubscribeEvent
 	public static void onEnchantmentRegister(RegistryEvent.Register<Enchantment> event)
 	{
-		ModEnchantmentInit.BeforeRegister();
-		event.getRegistry().registerAll(ModEnchantmentInit.ENCHANTMENT_LIST.toArray(new Enchantment[0]));
+		ModEnchantments.BeforeRegister();
+		event.getRegistry().registerAll(ModEnchantments.ENCHANTMENT_LIST.toArray(new Enchantment[0]));
 
 //		for (Enchantment enchantment : Enchantment.REGISTRY) {
 //			IdlFramework.Log("registered enchantments: %s", enchantment.getName());

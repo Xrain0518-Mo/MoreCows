@@ -11,9 +11,11 @@ entity.skeleton_cow.name=骷髅牛
 entity.milk_ball.name=牛奶球
 item.milk_ball.name=牛奶球
 
+#方块
 tile.beefroot_beetroot.name=甜菜犇的甜菜
 tile.milk_workshop.name=奶工坊
 
+#物品
 item.lava_wheat.name=熔岩小麦
 item.lava_wheat.desc=§o熔岩牛最爱的食物
 
@@ -49,6 +51,7 @@ item.rotten_cheese.name=变质奶酪
 item.creamer.name=精制奶精
 item.rotten_creamer.name=变质奶精
 
+#效果
 effect.delayed=延时
 potion.effect.delayed=延时药水
 splash_potion.effect.delayed=喷溅型延时药水
@@ -61,6 +64,10 @@ splash_potion.effect.purify=喷溅型净化药水
 lingering_potion.effect.purify=滞留型净化药水
 tipped_arrow.effect.purify=净化之箭
 
+#附魔
+enchantment.holy_strike=神圣打击
+
+#进度
 advancements.morecows.root.title=要一桶牛奶!
 advancements.morecows.root.description=繁殖一头牛或哞菇
 advancements.morecows.condensed_wheat.title=牛真的会吃吗?

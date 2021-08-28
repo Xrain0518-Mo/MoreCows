@@ -11,9 +11,11 @@ entity.skeleton_cow.name=Skeleton cow
 entity.milk_ball.name=Milk ball
 item.milk_ball.name=Milk ball
 
+#block
 tile.beefroot_beetroot.name=Beefroot's beetroot
 tile.milk_workshop.name=Milk workshop
 
+#item
 item.lava_wheat.name=Lava wheat
 item.lava_wheat.desc=§oLava cow's favorite food
 
@@ -49,6 +51,7 @@ item.rotten_cheese.name=Rotten cheese
 item.creamer.name=Creamer
 item.rotten_creamer.name=Rotten creamer
 
+#effect
 effect.delayed=Delayed
 potion.effect.delayed=Delayed Potion
 splash_potion.effect.delayed=Splash Potion of Delayed
@@ -61,6 +64,10 @@ splash_potion.effect.purify=Splash Potion of Purify
 lingering_potion.effect.purify=Lingering Potion of Purify
 tipped_arrow.effect.purify=Arrow of purify
 
+#enchant
+enchantment.holy_strike=Holy Strike
+
+#advanment
 advancements.morecows.root.title=A bucket of milk, please!
 advancements.morecows.root.description=Breed a cow or mooshroom
 advancements.morecows.condensed_wheat.title=Will cows really eat?

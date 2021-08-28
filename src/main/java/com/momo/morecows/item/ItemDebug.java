@@ -46,7 +46,7 @@ public class ItemDebug extends ItemBase{
 //        super.onUpdate(stack, worldIn, entityIn, itemSlot, isSelected);
 //        if (stack.isItemEnchantable())
 //        {
-//            stack.addEnchantment(ModEnchantmentInit.fireBurn, 0);
+//            stack.addEnchantment(ModEnchantments.fireBurn, 0);
 //        }
 //    }
 

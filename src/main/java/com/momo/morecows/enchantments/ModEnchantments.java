@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Mod.EventBusSubscriber(modid = IdlFramework.MODID)
-public class ModEnchantmentInit {
+public class ModEnchantments {
 
     public static final EntityEquipmentSlot[] armorSlots = new EntityEquipmentSlot[] {EntityEquipmentSlot.HEAD, EntityEquipmentSlot.CHEST, EntityEquipmentSlot.LEGS, EntityEquipmentSlot.FEET};
     public static final EntityEquipmentSlot[] allSlots = EntityEquipmentSlot.values();
@@ -30,7 +30,8 @@ public class ModEnchantmentInit {
     public static final RegistryNamespaced<ResourceLocation, Enchantment> REGISTRY = net.minecraftforge.registries.GameData.getWrapper(Enchantment.class);
     public static final List<Enchantment> ENCHANTMENT_LIST = new ArrayList<Enchantment>();
 
-    //Example Enchant
+    public static final ModEnchantmentBase HOLY_STRIKE = new EnchantmentHolyStrike();
+
 //    public static final ModEnchantmentBase ANTI_VANILLA = new ModEnchantmentBase("idlframewok.anti_vanilla", Enchantment.Rarity.UNCOMMON, EnumEnchantmentType.WEAPON,  mainHand)
 //            .setMaxLevel(10).setValue(0.3f, 0.3f);
 
