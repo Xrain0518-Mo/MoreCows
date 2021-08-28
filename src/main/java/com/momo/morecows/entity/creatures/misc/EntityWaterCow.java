@@ -3,7 +3,9 @@ package com.momo.morecows.entity.creatures.misc;
 import com.google.common.collect.Sets;
 import com.momo.morecows.item.ModItems;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockFarmland;
 import net.minecraft.block.IGrowable;
+import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.ai.*;
@@ -26,6 +28,7 @@ import java.util.Set;
 public class EntityWaterCow extends EntityModCow
 {
     private static final Set<Item> TEMPTATION_ITEMS = Sets.newHashSet(ModItems.WATER_WHEAT);
+    private static final PropertyInteger MOISTURE = PropertyInteger.create("moisture", 0, 7);
 
     public EntityWaterCow(World worldIn)
     {
@@ -109,7 +112,8 @@ public class EntityWaterCow extends EntityModCow
     {
         super.onLivingUpdate();
 
-        growCrops(this.getEntityWorld(), new BlockPos(this.posX,this.posY,this.posZ));
+        growCrops(this.getEntityWorld(), new BlockPos(this.posX, this.posY, this.posZ));
+        moistenFarmLand(this.getEntityWorld(), new BlockPos(this.posX, this.posY, this.posZ));
 
         if(this.isInWater()) { this.setAir(300); }
     }
@@ -130,6 +134,17 @@ public class EntityWaterCow extends EntityModCow
                             world.scheduleBlockUpdate(new BlockPos(x, y, z), cropBlock, 70, 1);
                         }
                     }
+                }
+            }
+        }
+    }
+
+    private void moistenFarmLand(World world, BlockPos pos){
+        if(!this.isChild()){
+            for (BlockPos.MutableBlockPos farmLandPos : BlockPos.getAllInBoxMutable(pos.add(-4, -2, -4), pos.add(4, 2, 4)))
+            {
+                if(world.getBlockState(farmLandPos).getBlock() instanceof BlockFarmland){
+                    world.setBlockState(farmLandPos, world.getBlockState(farmLandPos).withProperty(MOISTURE, Integer.valueOf(7)), 2);
                 }
             }
         }
