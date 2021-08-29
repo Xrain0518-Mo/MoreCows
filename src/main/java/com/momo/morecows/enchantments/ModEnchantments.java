@@ -31,6 +31,7 @@ public class ModEnchantments {
     public static final List<Enchantment> ENCHANTMENT_LIST = new ArrayList<Enchantment>();
 
     public static final ModEnchantmentBase HOLY_STRIKE = new EnchantmentHolyStrike();
+    public static final ModEnchantmentBase HOLY = new EnchantmentHoly();
 
 //    public static final ModEnchantmentBase ANTI_VANILLA = new ModEnchantmentBase("idlframewok.anti_vanilla", Enchantment.Rarity.UNCOMMON, EnumEnchantmentType.WEAPON,  mainHand)
 //            .setMaxLevel(10).setValue(0.3f, 0.3f);

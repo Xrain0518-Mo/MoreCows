@@ -66,6 +66,7 @@ tipped_arrow.effect.purify=Arrow of purify
 
 #enchant
 enchantment.holy_strike=Holy Strike
+enchantment.holy=Holy
 
 #advanment
 advancements.morecows.root.title=A bucket of milk, please!

@@ -7,8 +7,7 @@ import net.minecraft.inventory.EntityEquipmentSlot;
 
 public class EnchantmentHolyStrike extends ModEnchantmentBase {
 
-    public EnchantmentHolyStrike()
-    {
+    public EnchantmentHolyStrike() {
         super("holy_strike", Rarity.VERY_RARE, EnumEnchantmentType.WEAPON, new EntityEquipmentSlot[]{EntityEquipmentSlot.MAINHAND});
         setMaxLevel(1);
     }
@@ -17,6 +16,4 @@ public class EnchantmentHolyStrike extends ModEnchantmentBase {
     protected boolean canApplyTogether(Enchantment ench){
         return super.canApplyTogether(ench) && Enchantments.SWEEPING != ench;
     }
-
-
 }
