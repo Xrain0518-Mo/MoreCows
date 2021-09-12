@@ -31,7 +31,8 @@ public class RecipesManager {
     public static void addMilkWorkshopRecipe(List<ItemStack> inputs, List<ItemStack> outputs, int progress) {
         if (inputs.size() != 2 || outputs.size() != 2) {
             throw new IllegalArgumentException("recipe input or output size must be equal to 2");
-        } else {
+        }
+        else {
             CheckRecipe recipeTemp = new CheckRecipe(inputs, outputs, progress);
             if (checkMilkWorkshopRecipeRepeat(recipeTemp)) {
                 milkWorkshopRecipes.add(recipeTemp);
@@ -49,9 +50,11 @@ public class RecipesManager {
         for (CheckRecipe recipe : milkWorkshopRecipes) {
             if (recipeTemp.getOutputs().get(0) != ItemStack.EMPTY || recipeTemp.getOutputs().get(1) != ItemStack.EMPTY) {
                 if (!checkMilkWorkshopRecipeRepeat(recipeTemp)) {
-                    return recipe; // fix when current recipe has output, but input was another recipe
+                    return recipe;
+                    // fix when current recipe has output, but input was another recipe
                 }
-            } else if (ItemStackUtil.areItemStackListEqual(recipe.getInputs(), recipeTemp.getInputs())) {
+            }
+            else if (ItemStackUtil.areItemStackListEqual(recipe.getInputs(), recipeTemp.getInputs())) {
                 return recipe;
             }
         }

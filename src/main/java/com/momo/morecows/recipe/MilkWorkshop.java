@@ -6,7 +6,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
 public class MilkWorkshop {
-    public static void BaseMilkWorkshopRecipes() {
+    public static void MilkWorkshopRecipes() {
         RecipesManager.addMilkWorkshopRecipe(new ItemStack(Items.SUGAR), new ItemStack(Items.MILK_BUCKET)
                 , new ItemStack(ModItems.CHEESE), new ItemStack(Items.BUCKET));
 

@@ -74,7 +74,7 @@ public class IdlFramework {
         LogWarning("%s has finished its initializations", MODID);
 
         //MachineRecipe
-        MilkWorkshop.BaseMilkWorkshopRecipes();
+        MilkWorkshop.MilkWorkshopRecipes();
     }
 
     @EventHandler
