@@ -1,0 +1,98 @@
+---- Minecraft Crash Report ----
+// Hey, that tickles! Hehehe!
+
+Time: 8/7/21 1:42 AM
+Description: Ticking block entity
+
+java.lang.NullPointerException: Ticking block entity
+	at net.minecraft.potion.PotionUtils.addPotionToItemStack(PotionUtils.java:177)
+	at net.minecraft.potion.PotionHelper.doReaction(PotionHelper.java:144)
+	at net.minecraftforge.common.brewing.VanillaBrewingRecipe.getOutput(VanillaBrewingRecipe.java:66)
+	at net.minecraftforge.common.brewing.BrewingRecipeRegistry.getOutput(BrewingRecipeRegistry.java:98)
+	at net.minecraftforge.common.brewing.BrewingRecipeRegistry.hasOutput(BrewingRecipeRegistry.java:112)
+	at net.minecraftforge.common.brewing.BrewingRecipeRegistry.canBrew(BrewingRecipeRegistry.java:126)
+	at net.minecraft.tileentity.TileEntityBrewingStand.canBrew(TileEntityBrewingStand.java:177)
+	at net.minecraft.tileentity.TileEntityBrewingStand.update(TileEntityBrewingStand.java:99)
+	at net.minecraft.world.World.updateEntities(World.java:2007)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:643)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:842)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.potion.PotionUtils.addPotionToItemStack(PotionUtils.java:177)
+	at net.minecraft.potion.PotionHelper.doReaction(PotionHelper.java:144)
+	at net.minecraftforge.common.brewing.VanillaBrewingRecipe.getOutput(VanillaBrewingRecipe.java:66)
+	at net.minecraftforge.common.brewing.BrewingRecipeRegistry.getOutput(BrewingRecipeRegistry.java:98)
+	at net.minecraftforge.common.brewing.BrewingRecipeRegistry.hasOutput(BrewingRecipeRegistry.java:112)
+	at net.minecraftforge.common.brewing.BrewingRecipeRegistry.canBrew(BrewingRecipeRegistry.java:126)
+	at net.minecraft.tileentity.TileEntityBrewingStand.canBrew(TileEntityBrewingStand.java:177)
+	at net.minecraft.tileentity.TileEntityBrewingStand.update(TileEntityBrewingStand.java:99)
+
+-- Block entity being ticked --
+Details:
+	Name: minecraft:brewing_stand // net.minecraft.tileentity.TileEntityBrewingStand
+	Block type: ID #117 (tile.brewingStand // net.minecraft.block.BlockBrewingStand // minecraft:brewing_stand)
+	Block data value: 7 / 0x7 / 0b0111
+	Block location: World: (142,4,-36), Chunk: (at 14,0,12 in 8,-3; contains blocks 128,0,-48 to 143,255,-33), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Actual block type: ID #117 (tile.brewingStand // net.minecraft.block.BlockBrewingStand // minecraft:brewing_stand)
+	Actual block data value: 7 / 0x7 / 0b0111
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:2007)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:643)
+
+-- Affected level --
+Details:
+	Level name: 新的世界
+	All players: 0 total; []
+	Chunk stats: ServerChunkCache: 625 Drop: 0
+	Level seed: -1855310343638525479
+	Level generator: ID 01 - flat, ver 0. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (92,4,-163), Chunk: (at 12,0,13 in 5,-11; contains blocks 80,0,-176 to 95,255,-161), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Level time: 62735 game time, 6317 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 97823 (now: false), thunder time: 47806 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:842)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_291, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 300477416 bytes (286 MB) / 758644736 bytes (723 MB) up to 1875378176 bytes (1788 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 5 mods loaded, 5 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State     | ID        | Version      | Source                           | Signature |
+	|:--------- |:--------- |:------------ |:-------------------------------- |:--------- |
+	| UCHIJAAAA | minecraft | 1.12.2       | minecraft.jar                    | None      |
+	| UCHIJAAAA | mcp       | 9.42         | minecraft.jar                    | None      |
+	| UCHIJAAAA | FML       | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2768.jar | None      |
+	| UCHIJAAAA | forge     | 14.23.5.2768 | forgeSrc-1.12.2-14.23.5.2768.jar | None      |
+	| UCHIJAAAA | morecows  | 1.4.2        | MoreCows.main                    | None      |
+
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 8; []
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

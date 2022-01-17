@@ -1,0 +1,39 @@
+{
+    "display": {
+        "icon": {
+            "item": "morecows:cheese"
+        },
+        "title": {
+            "translate": "advancements.morecows.cheese.title"
+        },
+        "description": {
+            "translate": "advancements.morecows.cheese.description"
+        }
+    },
+    "parent": "morecows:main/milk_workshop",
+    "criteria": {
+        "cheese": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "morecows:cheese"
+                    }
+                ]
+            }
+        },
+        "rotten_cheese": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "morecows:rotten_cheese"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+            ["cheese", "rotten_cheese"]
+    ]
+}

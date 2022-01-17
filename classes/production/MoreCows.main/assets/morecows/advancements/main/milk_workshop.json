@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "morecows:milk_workshop"
+        },
+        "title": {
+            "translate": "advancements.morecows.milk_workshop.title"
+        },
+        "description": {
+            "translate": "advancements.morecows.milk_workshop.description"
+        }
+    },
+    "parent": "morecows:main/root",
+    "criteria": {
+        "milk_workshop": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "morecows:milk_workshop"
+                    }
+                ]
+            }
+        }
+    }
+}

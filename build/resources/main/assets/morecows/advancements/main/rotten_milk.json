@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "morecows:rotten_milk"
+        },
+        "title": {
+            "translate": "advancements.morecows.rotten_milk.title"
+        },
+        "description": {
+            "translate": "advancements.morecows.rotten_milk.description"
+        }
+    },
+    "parent": "morecows:main/root",
+    "criteria": {
+        "rotten_milk": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "morecows:rotten_milk"
+                    }
+                ]
+            }
+        }
+    }
+}

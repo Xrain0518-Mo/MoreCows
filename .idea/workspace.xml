@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="783ae80e-89b3-428a-b981-2d9a88f8b39c" name="默认更改列表" comment="" />
+    <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MoreCows" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MoreCows" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MoreCows" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="forgegradle" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/enchantments/ModEnchantments.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="33" column="60" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>wheat</find>
+      <find>bone</find>
+      <find>BREAD</find>
+      <find>isCrea</find>
+      <find>isBea</find>
+      <find>isBre</find>
+      <find>isBree</find>
+      <find>Update</find>
+      <find>FLOWING_LAVA</find>
+      <find>Gold</find>
+      <find>/** Whether the potion is a splash potion */</find>
+      <find>bad</find>
+      <find>potionsNeedUpdate</find>
+      <find>speed</find>
+      <find>init</find>
+      <find>PotionHealth</find>
+      <find>setsize</find>
+      <find>setSize</find>
+      <find>Y</find>
+      <find>tipped</find>
+      <find>getSlot</find>
+      <find>getSlotLi</find>
+      <find>inven</find>
+      <find>recipeProgress</find>
+      <find>cauldron</find>
+      <find>metal</find>
+      <find>chest</find>
+      <find>Enchantment</find>
+      <find>getMax</find>
+      <find>getMinEn</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/init/RegistryHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/blocks/Machine/MachineBase.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/morecows/models/item/milk_workshop.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/morecows/recipes/milk_workshop.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/network/MilkWorkshop/SlotMilkWorkOut.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/network/MilkWorkshop/RecipesMilkWorkShop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/recipe/RecipeMilkWorkshop.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/morecows/advancements/main/creamer.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/morecows/advancements/main/milk_ball.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/morecows/advancements/main/rotten_milk.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/morecows/advancements/main/kill_skeleton_cow.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/morecows/advancements/main/cheese.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/morecows/advancements/main/milk_workshop.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/network/MilkWorkshop/SlotMilkWorkMilkIn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/network/MilkWorkshop/GuiMilkWorkshop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/util/ItemStackUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/util/recipes/MilkWorkshopRecipe.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/morecows/models/block/milk_workshop.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/morecows/blockstates/milk_workshop.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/morecows/blockstates/soaking_pool.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/blocks/Machine/SoakingPool.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/item/potions/ModPotionType.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/morecows/blockstates/soaking_tankl.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/blocks/Machine/MilkWorkshop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/blocks/Machine/SoakingTank.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/network/SoakingPool/GuiMilkWorkshop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/network/SoakingPool/GuiSoakingPool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/recipe/MilkWorkshopRecipe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/recipe/CheckRecipe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/network/SoakingPool/GuiSoakingTank.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/network/SoakingPool/ContainerSoakingTank.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/network/MilkWorkshop/ContainerMilkWorkshop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/network/SoakingTank/ContainerSoakingTank.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/network/SoakingTank/GuiSoakingTank.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/network/GuiHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/blocks/ModBlocks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/entity/creatures/misc/EntityWaterCow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/potion/PotionBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/enchantments/ModEnchantmentBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/enchantments/ModEnchantmentInit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/enchantments/EnchantmentHolyStrike.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/enchantments/ModEnchantments.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/morecows/lang/en_us.lang" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/morecows/lang/zh_cn.lang" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/enchantments/EnchantmentHoly.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/events/EnchantmentsEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/recipe/MilkWorkshop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/IdlFramework.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/util/recipes/RecipesManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/momo/morecows/entity/tiles/blockTiles/TileEntityMilkWorkshop.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="240" />
+    <option name="y" value="125" />
+    <option name="width" value="1440" />
+    <option name="height" value="775" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
+      <hideEmptyPackages ProjectPane="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MoreCows" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MoreCows" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="MoreCows" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MoreCows" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MoreCows" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MoreCows" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="MoreCows" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MoreCows" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MoreCows" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MoreCows" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MoreCows" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MoreCows" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="momo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MoreCows" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MoreCows" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="momo" type="462c0819:PsiDirectoryNode" />
+              <item name="morecows" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MoreCows" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MoreCows" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="momo" type="462c0819:PsiDirectoryNode" />
+              <item name="morecows" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MoreCows" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MoreCows" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="momo" type="462c0819:PsiDirectoryNode" />
+              <item name="morecows" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="tiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Xrain\Desktop\MoreCows\src\main\resources\assets\morecows\blockstates" />
+      <recent name="C:\Users\Xrain\Desktop\MoreCows\src\main\resources\assets\morecows\advancements\main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.momo.morecows.network.SoakingPool" />
+      <recent name="com.momo.morecows.blocks.Machine" />
+      <recent name="com.momo.morecows.network.MilkWorkshop" />
+      <recent name="com.momo.morecows.entity.creatures.misc" />
+      <recent name="com.momo.morecows.entity.creatures.render" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Xrain\Desktop\MoreCows\src\main\resources\assets\morecows\advancements\main" />
+      <recent name="C:\Users\Xrain\Desktop\MoreCows\src\main\resources\assets\morecows\models\item" />
+      <recent name="C:\Users\Xrain\Desktop\MoreCows\src\main\resources\assets\morecows\recipes" />
+      <recent name="C:\Users\Xrain\Desktop\MoreCows\src\main\resources\assets\morecows\blockstates" />
+      <recent name="C:\Users\Xrain\Desktop\MoreCows\src\main\resources\assets\morecows\models\block" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Run Client">
+    <configuration name="Run Client" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="MAIN_CLASS_NAME" value="GradleStart" />
+      <module name="MoreCows.main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MoreCows [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.MoreCows [runClient]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+    <option name="ACTIVE_ACTIONS" value=",SHOW_NON_PUBLIC,SHOW_FIELDS,SHOW_INHERITED" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="783ae80e-89b3-428a-b981-2d9a88f8b39c" name="默认更改列表" comment="" />
+      <created>1624022144356</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624022144356</updated>
+    </task>
+    <task id="LOCAL-00001" summary="2021.8.3 16:41">
+      <created>1627980203261</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1627980203261</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.64612675" visible="true" weight="0.325067" />
+      <window_info id="Structure" order="1" sideWeight="0.35387325" side_tool="true" weight="0.37868634" />
+      <window_info id="设计器" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Alibaba Cloud Explorer" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.34702548" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21388102" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.11898017" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.13314448" />
+      <window_info anchor="bottom" id="LuaCheck" order="12" weight="0.32956153" />
+      <window_info anchor="bottom" id="Codeup" order="13" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.3297587" />
+      <window_info anchor="right" id="调色板" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Alibaba ROS Templates" order="9" />
+      <window_info anchor="right" id="Alibaba Function Compute" order="10" />
+      <window_info anchor="right" id="Alibaba Log Console" order="11" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.64612675" visible="true" weight="0.2841823" />
+      <window_info id="Structure" order="1" sideWeight="0.35387325" side_tool="true" weight="0.37868634" />
+      <window_info id="设计器" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Alibaba Cloud Explorer" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.14022663" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21388102" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.11898017" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.13314448" />
+      <window_info anchor="bottom" id="LuaCheck" order="12" weight="0.32956153" />
+      <window_info anchor="bottom" id="Codeup" order="13" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.3297587" />
+      <window_info anchor="right" id="调色板" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Alibaba ROS Templates" order="9" />
+      <window_info anchor="right" id="Alibaba Function Compute" order="10" />
+      <window_info anchor="right" id="Alibaba Log Console" order="11" />
+    </layout-to-restore>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.json" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2021.8.3 16:41" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021.8.3 16:41" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/blocks/ModBlocks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/blocks/Machine/MilkWorkshop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/world/chunk/Chunk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="517" column="23" selection-start-line="517" selection-start-column="23" selection-end-line="517" selection-end-column="23" />
+          <folding>
+            <element signature="e#17517#17518#0" expanded="true" />
+            <element signature="e#17594#17595#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/world/World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="995" column="29" selection-start-line="995" selection-start-column="29" selection-end-line="995" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_291/src.zip!/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/block/Block.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="1091" column="16" selection-start-line="1091" selection-start-column="16" selection-end-line="1091" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/util/ResourceLocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-722">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768.jar!/net/minecraft/client/renderer/InventoryEffectRenderer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#4750#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/init/MobEffects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/block/BlockFarmland.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/potion/Potion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="126" column="12" selection-start-line="126" selection-start-column="12" selection-end-line="126" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/entity/creatures/misc/EntityWaterCow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="146" column="133" selection-start-line="146" selection-start-column="133" selection-end-line="146" selection-end-column="133" />
+          <folding>
+            <element signature="e#5890#5891#0" expanded="true" />
+            <element signature="e#5943#5944#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/registries/IForgeRegistryEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/enchantments/ModEnchantmentProtection.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/inventory/EntityEquipmentSlot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-304">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/enchantment/EnchantmentProtection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="16" column="130" selection-start-line="16" selection-start-column="130" selection-end-line="16" selection-end-column="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/enchantment/Enchantment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="109" column="15" selection-start-line="109" selection-start-column="15" selection-end-line="109" selection-end-column="15" />
+          <folding>
+            <element signature="e#3381#3382#0" expanded="true" />
+            <element signature="e#3429#3430#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/enchantments/ModEnchantmentBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2850">
+          <caret line="166" column="35" selection-start-line="166" selection-start-column="35" selection-end-line="166" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/events/AddedEntityDrop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/util/DamageSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="188" column="18" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
+          <folding>
+            <element signature="e#7357#7358#0" expanded="true" />
+            <element signature="e#7400#7401#0" expanded="true" />
+            <element signature="e#7601#7602#0" expanded="true" />
+            <element signature="e#7628#7629#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/item/food/ItemRottenCheese.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/event/entity/living/LivingHurtEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/item/food/ItemCheese.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_291/jre/lib/jfr.jar!/oracle/jrockit/jfr/parser/EventData.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#1259#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/event/entity/living/PotionColorCalculationEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#2129#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/event/brewing/PotionBrewEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/entity/player/EntityPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="2419" column="31" selection-start-line="2419" selection-start-column="31" selection-end-line="2419" selection-end-column="31" />
+          <folding>
+            <element signature="e#83044#83045#0" expanded="true" />
+            <element signature="e#83096#83097#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/morecows/lang/zh_cn.lang">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/morecows/lang/en_us.lang">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="64" column="35" lean-forward="true" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/events/CowTransform.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/events/InstantGrowth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/fml/common/gameevent/TickEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/events/EnchantmentsEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/IdlFramework.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/util/ItemStackUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/21.0/b9ed26b8c23fe7cd3e6b463b34e54e5c6d9536d5/guava-21.0-sources.jar!/com/google/common/collect/Lists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_291/src.zip!/java/util/function/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/recipe/MilkWorkshop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/entity/tiles/blockTiles/TileEntityMilkWorkshop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/recipe/CheckRecipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/util/recipes/RecipesManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/init/RegistryHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="65" column="43" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/potion/InstantPotion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/potion/PotionType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/potion/ModPotion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/potion/PotionBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/item/potions/PotionTypeBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/item/potions/ModPotionType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/enchantments/EnchantmentHolyStrike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/enchantments/EnchantmentHoly.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/momo/morecows/enchantments/ModEnchantments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="33" column="60" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

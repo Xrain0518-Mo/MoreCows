@@ -1,0 +1,99 @@
+itemGroup.morecows=MoreCows
+
+#Creatures
+entity.lava_cow.name=Lava cow
+entity.water_cow.name=Water cow
+entity.beefroot.name=Beefroot
+entity.zombie_cow.name=Zombie cow
+entity.skeleton_cow.name=Skeleton cow
+
+#Throwable
+entity.milk_ball.name=Milk ball
+item.milk_ball.name=Milk ball
+
+#block
+tile.beefroot_beetroot.name=Beefroot's beetroot
+tile.milk_workshop.name=Milk workshop
+
+#item
+item.lava_wheat.name=Lava wheat
+item.lava_wheat.desc=§oLava cow's favorite food
+
+item.water_wheat.name=Water wheat
+item.water_wheat.desc=§oWater cow's favorite food
+
+item.condensed_lava_wheat.name=Condensed lava wheat
+item.condensed_lava_wheat.desc=§oTurn the cow into lava cow
+
+item.condensed_water_wheat.name=Condensed water wheat
+item.condensed_water_wheat.desc=§oTurn the cow into water cow
+
+item.condensed_mushroom_wheat.name=Condensed mushroom wheat
+item.condensed_mushroom_wheat.desc=§oTurn the cow into mooshroom
+
+item.condensed_beetroot_wheat.name=Condensed beetroot wheat
+item.condensed_beetroot_wheat.desc=§oTurn the cow into beefroot
+
+item.condensed_rotten_wheat.name=Condensed rotten wheat
+item.condensed_rotten_wheat.desc=§oTurn the cow into zombie cow
+
+item.condensed_bone_wheat.name=Condensed bone wheat
+item.condensed_bone_wheat.desc=§oTurn the cow into skeleton cow
+
+item.golden_wheat.name=§eGolden_wheat
+item.golden_wheat.desc=§oLet the cow grow up suddenly
+
+item.rotten_milk.name=Rotten milk
+
+item.cheese.name=Cheese
+item.rotten_cheese.name=Rotten cheese
+
+item.creamer.name=Creamer
+item.rotten_creamer.name=Rotten creamer
+
+#effect
+effect.delayed=Delayed
+potion.effect.delayed=Delayed Potion
+splash_potion.effect.delayed=Splash Potion of Delayed
+lingering_potion.effect.delayed=Lingering Potion of Delayed
+tipped_arrow.effect.delayed=Arrow of delayed
+
+effect.purify=Purify
+potion.effect.purify=Purify Potion
+splash_potion.effect.purify=Splash Potion of Purify
+lingering_potion.effect.purify=Lingering Potion of Purify
+tipped_arrow.effect.purify=Arrow of purify
+
+#enchant
+enchantment.holy_strike=Holy Strike
+enchantment.holy=Holy
+
+#advanment
+advancements.morecows.root.title=A bucket of milk, please!
+advancements.morecows.root.description=Breed a cow or mooshroom
+advancements.morecows.condensed_wheat.title=Will cows really eat?
+advancements.morecows.condensed_wheat.description=Get a condensed wheat
+advancements.morecows.all_condensed_wheat.title=Condensed wheat party
+advancements.morecows.all_condensed_wheat.description=Get all condensed wheat
+advancements.morecows.bred_all_cow.title=Cow"s family!
+advancements.morecows.bred_all_cow.description=Bred all kinds of cow
+advancements.morecows.breed_liquid_cow.title=Liquid to liquid
+advancements.morecows.breed_liquid_cow.description=Breed a liquid cow
+advancements.morecows.evil_wheat.title=Satanic ritual
+advancements.morecows.evil_wheat.description=Get a wheat looked evil
+advancements.morecows.milk_workshop.title=Local Milk Workshop
+advancements.morecows.milk_workshop.description=Get a milk workshop
+advancements.morecows.cheese.title=Easy to carry
+advancements.morecows.cheese.description=Get a cheese
+advancements.morecows.creamer.title=Looks like milk powder
+advancements.morecows.creamer.description=Get a creamer
+advancements.morecows.milk_ball.title=Ball of purify
+advancements.morecows.milk_ball.description=Get a milk ball
+advancements.morecows.rotten_milk.title=It drink terrible
+advancements.morecows.rotten_milk.description=Get a bucket of rotten milk
+advancements.morecows.kill_skeleton_cow.title=Eviler than devils
+advancements.morecows.kill_skeleton_cow.description=Kill a skeleton cow
+
+
+
+

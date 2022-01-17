@@ -1,0 +1,52 @@
+{
+    "display": {
+        "icon": {
+            "item": "morecows:golden_wheat"
+        },
+        "title": {
+            "translate": "advancements.morecows.bred_all_cow.title"
+        },
+        "description": {
+            "translate": "advancements.morecows.bred_all_cow.description"
+        },
+        "frame": "challenge"
+    },
+    "parent": "morecows:main/breed_liquid_cow",
+    "criteria": {
+        "bred_lava_cow": {
+            "trigger": "bred_animals",
+            "conditions": {
+                "parent": {
+                    "type": "morecows:lava_cow"
+                }
+            }
+        },
+        "bred_water_cow": {
+            "trigger": "bred_animals",
+            "conditions": {
+                "parent": {
+                    "type": "morecows:water_cow"
+                }
+            }
+        },
+        "bred_beefroot": {
+            "trigger": "bred_animals",
+            "conditions": {
+                "parent": {
+                    "type": "morecows:beefroot"
+                }
+            }
+        },
+        "bred_mooshroom": {
+            "trigger": "bred_animals",
+            "conditions": {
+                "parent": {
+                    "type": "mooshroom"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "recipes": ["morecows:golden_wheat"]
+    }
+}

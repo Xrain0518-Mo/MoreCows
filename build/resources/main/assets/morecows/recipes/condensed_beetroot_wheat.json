@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:beetroot_soup"
+    },
+    "B": {
+      "item": "minecraft:wheat"
+    }
+  },
+    "result": {
+      "item": "morecows:condensed_beetroot_wheat",
+      "count": 1
+    }
+}

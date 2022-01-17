@@ -1,0 +1,39 @@
+{
+    "display": {
+        "icon": {
+            "item": "morecows:condensed_rotten_wheat"
+        },
+        "title": {
+            "translate": "advancements.morecows.evil_wheat.title"
+        },
+        "description": {
+            "translate": "advancements.morecows.evil_wheat.description"
+        }
+    },
+    "parent": "morecows:main/condensed_wheat",
+    "criteria": {
+        "rotten": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "morecows:condensed_rotten_wheat"
+                    }
+                ]
+            }
+        },
+        "bone": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "morecows:condensed_bone_wheat"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        ["rotten", "bone"]
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "display": {
+        "icon": {
+            "item": "morecows:creamer"
+        },
+        "title": {
+            "translate": "advancements.morecows.creamer.title"
+        },
+        "description": {
+            "translate": "advancements.morecows.creamer.description"
+        }
+    },
+    "parent": "morecows:main/cheese",
+    "criteria": {
+        "creamer": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "morecows:creamer"
+                    }
+                ]
+            }
+        },
+        "rotten_creamer": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "morecows:rotten_creamer"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+            ["creamer", "rotten_creamer"]
+    ]
+}

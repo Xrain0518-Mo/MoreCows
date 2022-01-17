@@ -1,0 +1,120 @@
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 8/21/21 11:43 PM
+Description: Rendering screen
+
+java.lang.ArithmeticException: / by zero
+	at com.momo.morecows.network.MilkWorkshop.GuiMilkWorkshop.drawGuiContainerBackgroundLayer(GuiMilkWorkshop.java:38)
+	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:93)
+	at com.momo.morecows.network.MilkWorkshop.GuiMilkWorkshop.drawScreen(GuiMilkWorkshop.java:23)
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:381)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1177)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1208)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:441)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at com.momo.morecows.network.MilkWorkshop.GuiMilkWorkshop.drawGuiContainerBackgroundLayer(GuiMilkWorkshop.java:38)
+	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:93)
+	at com.momo.morecows.network.MilkWorkshop.GuiMilkWorkshop.drawScreen(GuiMilkWorkshop.java:23)
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:381)
+
+-- Screen render details --
+Details:
+	Screen name: com.momo.morecows.network.MilkWorkshop.GuiMilkWorkshop
+	Mouse location: Scaled: (211, 102). Absolute: (844, 593)
+	Screen size: Scaled: (480, 251). Absolute: (1920, 1001). Scale factor of 4
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player619'/63, l='MpServer', x=1345.94, y=4.00, z=168.83]]
+	Chunk stats: MultiplayerChunkCache: 624, 624
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (1345,4,133), Chunk: (at 1,0,5 in 84,8; contains blocks 1344,0,128 to 1359,255,143), Region: (2,0; contains chunks 64,0 to 95,31, blocks 1024,0,0 to 1535,255,511)
+	Level time: 173318 game time, 16707 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: true), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 46 total; [EntityItem['item.item.egg'/997705, l='MpServer', x=1409.80, y=4.00, z=136.35], EntityCow['牛'/9, l='MpServer', x=1288.56, y=4.00, z=119.78], EntityPig['猪'/10, l='MpServer', x=1296.59, y=4.00, z=197.75], EntityPig['猪'/11, l='MpServer', x=1335.76, y=4.00, z=103.59], EntityChicken['鸡'/12, l='MpServer', x=1353.71, y=4.00, z=103.90], EntityPig['猪'/15, l='MpServer', x=1381.24, y=4.00, z=111.34], EntityChicken['鸡'/16, l='MpServer', x=1363.80, y=4.00, z=112.40], EntityPlayerSP['Player619'/63, l='MpServer', x=1345.94, y=4.00, z=168.83], EntityChicken['鸡'/18, l='MpServer', x=1372.16, y=4.00, z=136.40], EntityChicken['鸡'/19, l='MpServer', x=1364.72, y=4.00, z=128.83], EntityItem['item.item.egg'/234135, l='MpServer', x=1388.23, y=4.00, z=114.98], EntityWaterCow['水牛'/21, l='MpServer', x=1372.86, y=4.00, z=139.17], EntitySkeletonCow['骷髅牛'/22, l='MpServer', x=1368.55, y=4.00, z=140.77], EntityChicken['鸡'/23, l='MpServer', x=1365.89, y=4.00, z=213.92], EntitySheep['羊'/25, l='MpServer', x=1361.66, y=4.00, z=218.75], EntitySheep['羊'/26, l='MpServer', x=1370.39, y=4.00, z=235.23], EntityPig['猪'/27, l='MpServer', x=1388.56, y=4.00, z=107.31], EntityChicken['鸡'/28, l='MpServer', x=1387.82, y=4.00, z=114.26], EntityZombieCow['僵尸牛'/29, l='MpServer', x=1381.18, y=4.00, z=123.77], EntityItem['item.item.egg'/1360265, l='MpServer', x=1395.98, y=4.00, z=168.06], EntityHorse['马'/30, l='MpServer', x=1386.16, y=4.00, z=134.73], EntityChicken['鸡'/32, l='MpServer', x=1388.80, y=4.00, z=131.54], EntitySheep['羊'/33, l='MpServer', x=1390.39, y=4.00, z=159.09], EntitySheep['羊'/35, l='MpServer', x=1352.02, y=4.00, z=185.89], EntityChicken['鸡'/36, l='MpServer', x=1387.82, y=4.00, z=205.09], EntityChicken['鸡'/37, l='MpServer', x=1407.28, y=4.00, z=122.15], EntityChicken['鸡'/39, l='MpServer', x=1404.20, y=4.00, z=133.90], EntityChicken['鸡'/40, l='MpServer', x=1396.03, y=4.00, z=142.29], EntityChicken['鸡'/41, l='MpServer', x=1402.14, y=4.00, z=133.38], EntityItem['item.item.egg'/983910, l='MpServer', x=1373.09, y=4.00, z=136.01], EntityItem['item.item.egg'/1333311, l='MpServer', x=1364.55, y=4.00, z=112.81], EntityZombieCow['僵尸牛'/44, l='MpServer', x=1389.84, y=4.00, z=160.42], EntityPig['猪'/45, l='MpServer', x=1405.80, y=4.00, z=167.80], EntityChicken['鸡'/46, l='MpServer', x=1396.11, y=4.00, z=167.16], EntityPig['猪'/47, l='MpServer', x=1402.21, y=4.00, z=179.75], EntityItem['item.item.egg'/630950, l='MpServer', x=1404.15, y=4.00, z=133.31], EntityItem['item.item.egg'/971041, l='MpServer', x=1388.93, y=4.00, z=131.16], EntitySheep['羊'/48, l='MpServer', x=1393.21, y=4.00, z=224.79], EntityItem['item.item.egg'/911677, l='MpServer', x=1388.22, y=4.00, z=204.21], EntityChicken['鸡'/49, l='MpServer', x=1410.77, y=4.00, z=136.09], EntityItem['item.item.egg'/385719, l='MpServer', x=1365.12, y=4.00, z=129.26], EntityCow['牛'/51, l='MpServer', x=1421.36, y=4.00, z=166.19], EntityChicken['鸡'/52, l='MpServer', x=1412.60, y=4.00, z=178.14], EntityChicken['鸡'/53, l='MpServer', x=1414.76, y=4.00, z=162.53], EntitySheep['羊'/57, l='MpServer', x=1416.54, y=4.00, z=174.71], EntityItem['item.item.egg'/1183918, l='MpServer', x=1407.27, y=4.00, z=122.21]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:461)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2888)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:462)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_291, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 199914576 bytes (190 MB) / 954204160 bytes (910 MB) up to 1875378176 bytes (1788 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 5 mods loaded, 5 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State     | ID        | Version      | Source                           | Signature |
+	|:--------- |:--------- |:------------ |:-------------------------------- |:--------- |
+	| UCHIJAAAA | minecraft | 1.12.2       | minecraft.jar                    | None      |
+	| UCHIJAAAA | mcp       | 9.42         | minecraft.jar                    | None      |
+	| UCHIJAAAA | FML       | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2768.jar | None      |
+	| UCHIJAAAA | forge     | 14.23.5.2768 | forgeSrc-1.12.2-14.23.5.2768.jar | None      |
+	| UCHIJAAAA | morecows  | 1.4.2        | MoreCows.main                    | None      |
+
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'Intel' Version: '4.6.0 - Build 26.20.100.6913' Renderer: 'Intel(R) HD Graphics 620'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: Intel(R) HD Graphics 620 GL version 4.6.0 - Build 26.20.100.6913, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: 简体中文 (中国)
+	Profiler Position: N/A (disabled)
+	CPU: 4x Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz

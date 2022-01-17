@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "BCB",
+    "DDD"
+  ],
+  "key": {
+    "A": [
+        {
+          "item": "minecraft:planks",
+          "data": 0
+        },
+        {
+          "item": "minecraft:planks",
+          "data": 1
+        },
+        {
+          "item": "minecraft:planks",
+          "data": 2
+        },
+        {
+          "item": "minecraft:planks",
+          "data": 3
+        },
+        {
+          "item": "minecraft:planks",
+          "data": 4
+        },
+        {
+          "item": "minecraft:planks",
+          "data": 5
+        }
+      ],
+    "B": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:bucket"
+    },
+    "D": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+    "result": {
+      "item": "morecows:milk_workshop",
+      "count": 1
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "morecows:milk_ball"
+        },
+        "title": {
+            "translate": "advancements.morecows.milk_ball.title"
+        },
+        "description": {
+            "translate": "advancements.morecows.milk_ball.description"
+        }
+    },
+    "parent": "morecows:main/milk_workshop",
+    "criteria": {
+        "milk_ball": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "morecows:milk_ball"
+                    }
+                ]
+            }
+        }
+    }
+}

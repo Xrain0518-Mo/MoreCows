@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:wheat"
+    },
+    "B": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+    "result": {
+      "item": "morecows:golden_wheat",
+      "count": 1
+    }
+}
