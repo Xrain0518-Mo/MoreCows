@@ -1,68 +1,68 @@
 itemGroup.morecows=MoreCows
 
 #Creatures
-entity.lava_cow.name=Lava cow
-entity.water_cow.name=Water cow
+entity.lava_cow.name=Lava Cow
+entity.water_cow.name=Water Cow
 entity.beefroot.name=Beefroot
-entity.zombie_cow.name=Zombie cow
-entity.skeleton_cow.name=Skeleton cow
+entity.zombie_cow.name=Zombie Cow
+entity.skeleton_cow.name=Skeleton Cow
 
 #Throwable
-entity.milk_ball.name=Milk ball
-item.milk_ball.name=Milk ball
+entity.milk_ball.name=Milk Ball
+item.milk_ball.name=Milk Ball
 
 #block
-tile.beefroot_beetroot.name=Beefroot's beetroot
-tile.milk_workshop.name=Milk workshop
+tile.beefroot_beetroot.name=Beefroot's Beetroot
+tile.milk_workshop.name=Milk Workshop
 
 #item
-item.lava_wheat.name=Lava wheat
+item.lava_wheat.name=Lava Wheat
 item.lava_wheat.desc=§oLava cow's favorite food
 
-item.water_wheat.name=Water wheat
+item.water_wheat.name=Water Wheat
 item.water_wheat.desc=§oWater cow's favorite food
 
-item.condensed_lava_wheat.name=Condensed lava wheat
+item.condensed_lava_wheat.name=Condensed Lava Wheat
 item.condensed_lava_wheat.desc=§oTurn the cow into lava cow
 
-item.condensed_water_wheat.name=Condensed water wheat
+item.condensed_water_wheat.name=Condensed Water Wheat
 item.condensed_water_wheat.desc=§oTurn the cow into water cow
 
-item.condensed_mushroom_wheat.name=Condensed mushroom wheat
+item.condensed_mushroom_wheat.name=Condensed Mushroom Wheat
 item.condensed_mushroom_wheat.desc=§oTurn the cow into mooshroom
 
-item.condensed_beetroot_wheat.name=Condensed beetroot wheat
+item.condensed_beetroot_wheat.name=Condensed Beetroot Wheat
 item.condensed_beetroot_wheat.desc=§oTurn the cow into beefroot
 
-item.condensed_rotten_wheat.name=Condensed rotten wheat
+item.condensed_rotten_wheat.name=Condensed Rotten Wheat
 item.condensed_rotten_wheat.desc=§oTurn the cow into zombie cow
 
-item.condensed_bone_wheat.name=Condensed bone wheat
+item.condensed_bone_wheat.name=Condensed Bone Wheat
 item.condensed_bone_wheat.desc=§oTurn the cow into skeleton cow
 
-item.golden_wheat.name=§eGolden_wheat
+item.golden_wheat.name=§eGolden Wheat
 item.golden_wheat.desc=§oLet the cow grow up suddenly
 
-item.rotten_milk.name=Rotten milk
+item.rotten_milk.name=Rotten Milk
 
 item.cheese.name=Cheese
-item.rotten_cheese.name=Rotten cheese
+item.rotten_cheese.name=Rotten Cheese
 
 item.creamer.name=Creamer
-item.rotten_creamer.name=Rotten creamer
+item.rotten_creamer.name=Rotten Creamer
 
 #effect
 effect.delayed=Delayed
 potion.effect.delayed=Delayed Potion
 splash_potion.effect.delayed=Splash Potion of Delayed
 lingering_potion.effect.delayed=Lingering Potion of Delayed
-tipped_arrow.effect.delayed=Arrow of delayed
+tipped_arrow.effect.delayed=Arrow of Delayed
 
 effect.purify=Purify
 potion.effect.purify=Purify Potion
 splash_potion.effect.purify=Splash Potion of Purify
 lingering_potion.effect.purify=Lingering Potion of Purify
-tipped_arrow.effect.purify=Arrow of purify
+tipped_arrow.effect.purify=Arrow of Purify
 
 #enchant
 enchantment.holy_strike=Holy Strike

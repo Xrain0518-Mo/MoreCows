@@ -122,7 +122,7 @@ endProcessing "com/momo/morecows/entity/creatures/ideallandTeam/EntityIdeallandU
 startProcessing "com/momo/morecows/entity/creatures/misc/EntityBeefroot.java" md5: 0afcb1c13099599db5b119c74136fce4
 endProcessing "com/momo/morecows/entity/creatures/misc/EntityBeefroot.java"
 
-startProcessing "com/momo/morecows/entity/creatures/misc/EntityLavaCow.java" md5: 88deb29d331774b8ada84be5b7208d7e
+startProcessing "com/momo/morecows/entity/creatures/misc/EntityLavaCow.java" md5: f238313031cc4f5a22b7ba1e889b956d
 endProcessing "com/momo/morecows/entity/creatures/misc/EntityLavaCow.java"
 
 startProcessing "com/momo/morecows/entity/creatures/misc/EntityModCow.java" md5: 311ae7eb79117f0ff19cbbf4d580e7e8
@@ -131,7 +131,7 @@ endProcessing "com/momo/morecows/entity/creatures/misc/EntityModCow.java"
 startProcessing "com/momo/morecows/entity/creatures/misc/EntitySkeletonCow.java" md5: ecea87ea9203e1d249ad780dc904f74c
 endProcessing "com/momo/morecows/entity/creatures/misc/EntitySkeletonCow.java"
 
-startProcessing "com/momo/morecows/entity/creatures/misc/EntityWaterCow.java" md5: f64ba54820fb3b834ed45f43f9dedf3e
+startProcessing "com/momo/morecows/entity/creatures/misc/EntityWaterCow.java" md5: e1c9c28d8aba9e48bf8f9734bb8b720b
 endProcessing "com/momo/morecows/entity/creatures/misc/EntityWaterCow.java"
 
 startProcessing "com/momo/morecows/entity/creatures/misc/EntityZombieCow.java" md5: 463198a96cbc62f81efee3b807f66fe1

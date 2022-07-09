@@ -73,9 +73,10 @@ public class EntityLavaCow extends EntityModCow
             return true;
         }
 
-        if (itemstack.getItem() == Items.WATER_BUCKET && !player.capabilities.isCreativeMode)
+        if (itemstack.getItem() == Items.WATER_BUCKET)
         {
-            itemstack.shrink(1);
+            if(!player.capabilities.isCreativeMode) itemstack.shrink(1);
+
             if (itemstack.isEmpty())
             {
                 player.setHeldItem(hand, new ItemStack(Items.BUCKET));
@@ -95,7 +96,10 @@ public class EntityLavaCow extends EntityModCow
                 this.world.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL, this.posX + (double)(this.rand.nextFloat() * this.width * 2.0F) - (double)this.width, this.posY + (double)(this.rand.nextFloat() * this.height), this.posZ + (double)(this.rand.nextFloat() * this.width * 2.0F) - (double)this.width, d0, d1, d2);
             }
 
-            this.world.spawnEntity(new EntityItem(this.world, this.posX, this.posY, this.posZ, new ItemStack(Blocks.OBSIDIAN)));
+            if(!this.world.isRemote && !this.isChild())
+            {
+                this.dropItem(Item.getItemFromBlock(Blocks.OBSIDIAN), 1);
+            }
             onKillCommand();
 
             return true;
